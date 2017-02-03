@@ -1,4 +1,4 @@
-# Model Form
+# Frontinsampa 2017
 
 Install 4 gulp and then npm install... that's it!
 
@@ -12,4 +12,15 @@ After installed gulp...
 
 ```
 npm install
+```
+
+_____
+
+# For Deploy
+
+run the command
+
+```
+gulp deploy
+
 ```

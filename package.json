@@ -1,14 +1,14 @@
 {
   "name": "Frontinsampa 2017",
   "version": "1.0.0",
-  "description": "Frontinsampa 2017",
+  "description": "Website Frontinsampa 2017",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/frontinsampa/site2017/"
   },
   "author": "Deivid Marques",
   "license": "ISC",
