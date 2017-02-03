@@ -11,6 +11,7 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify       = require('gulp-uglify'),
     path         = require('path');
+    ghPages      = require('gulp-gh-pages');
 
 gulp.task('sass', function() {
   return gulp.src('./build/index.html')
@@ -104,3 +105,8 @@ gulp.task('default', gulp.series(
     gulp.watch('./source/images/**/*.+(png|jpeg|jpg|gif|mp4)', gulp.series('images', browserSync.reload));
   })
 );
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
