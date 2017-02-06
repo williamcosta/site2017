@@ -60,6 +60,12 @@ body {
   margin: 0 auto;
   width: 980px; }
 
+.title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1; }
+
 .menu {
   background: black;
   padding-bottom: 30px;
@@ -127,11 +133,7 @@ body {
   padding: 50px 0; }
   .speaker-list .title {
     text-align: center;
-    margin: 40px 0 130px;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 1; }
+    margin: 40px 0 130px; }
   .speaker-list .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157,3 +159,27 @@ body {
     font-size: 14px; }
   .speaker-list .social {
     color: #32c6ef; }
+
+.local {
+  padding: 90px 0 170px;
+  text-align: center;
+  color: #fff; }
+  .local .title {
+    margin-bottom: 70px; }
+  .local .subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 35px; }
+  .local p {
+    margin-bottom: 50px;
+    color: #fff; }
+  .local .btn {
+    background: #da83f6; }
+
+.sponsors {
+  background: #fff;
+  padding: 100px 0; }
+  .sponsors .title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000; }
