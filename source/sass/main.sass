@@ -47,21 +47,24 @@ table
   border-collapse: collapse
   border-spacing: 0
 
-body
-  font-family: 12px
-  overflow: hidden
-
 a
   text-decoration: none
+
+p
+  margin-bottom: 11px
+  color: $gray
 
 body
   background: $black
   font-family: 'Roboto', sans-serif
 
 .container
+  margin: 0 auto
   width: 980px
 
 .menu
+  background: rgba($black, 8)
+  padding-bottom: 30px
   position: fixed
   width: 100%
   top: 0
@@ -90,9 +93,87 @@ body
   text-align: center
   color: $gray
 
+  p
+    margin: 55px 0
+
 
 .btn
-  background: #ff685c
+  background: $red
   padding: 20px 40px
+  margin-top: 25px
   color: $white
+  display: inline-block
+
+
+.info
+  background: $white
+  padding: 115px 0
+  margin-top: 135px
+
+
+  .container
+    display: flex
+
+  .slogan
+    width: 45%
+
+    h2
+      width: 150px
+      font-size: 28px
+      font-weight: 400
+      line-height: 1.5
+
+  .description
+    width: 500px
+
+
+    a
+      color: $black
+      text-decoration: underline
+
+      &:hover,
+      &:focus
+        text-decoration: none
+
+
+.speaker-list
+  background: $gray-dark
+  padding: 50px 0
+
+  .title
+    text-align: center
+    margin: 40px 0 130px
+    color: $white
+    font-size: 28px
+    font-weight: 400
+    letter-spacing: 1
+
+
+  .container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .speaker-item
+    flex-basis: 230px
+    margin-bottom: 100px
+
+    img
+      max-width: 100%
+
+  .name
+    margin-top: 30px
+    font-size: 18px
+    color: $white
+    font-weight: 400
+
+  .bio
+    margin: 12px 0
+    font-size: 14px
+
+  .social
+    color: $blue
+
+// @media screen and (max-width: 600px)
+
 
