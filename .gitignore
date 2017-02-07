@@ -4,3 +4,4 @@ node_modules
 .publish/
 .DS_Store
 *.zip
+*.lock
