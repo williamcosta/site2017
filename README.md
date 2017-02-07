@@ -12,6 +12,14 @@ After installed gulp...
 
 ```
 npm install
+
+```
+
+and after run the command
+
+```
+gulp
+
 ```
 
 _____
