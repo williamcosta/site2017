@@ -12,6 +12,7 @@ var gulp         = require('gulp'),
     uglify       = require('gulp-uglify'),
     path         = require('path');
     ghPages      = require('gulp-gh-pages');
+    babel        = require('gulp-babel');
 
 gulp.task('sass', function() {
   return gulp.src('./build/index.html')
@@ -32,6 +33,7 @@ gulp.task('javascript', function() {
   return gulp.src('./build/index.html')
     .pipe(inject(
       gulp.src('./source/js/**/*.js')
+        .pipe(babel())
         .pipe(uglify({
             mangle: false
         }))
