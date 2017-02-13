@@ -5,49 +5,57 @@ var speakersData = [
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   },
-    {
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische'
+    twitterLink: '/jscahische',
+    photo: 'assets/images/speaker.jpg'
   }
 ]
 
@@ -129,7 +137,26 @@ const timelineTemplate = (timeline) => {
   }).join('')
 }
 
+const speakerTemplate = (speaker) => {
+  return speaker.map((item, index) => {
+    return (
+      `
+        <figure class="speaker-item">
+          <img src="assets/images/speaker.jpg" alt="">
+          <figcaption>
+            <span class="name">${ speaker.name }</span>
+            <p class="bio">Typographer & Illustrator</p>
+            <a href="${ speaker.twitterLink }" class="social" target="_blank">${ speaker.twitter }</a>
+          </figcaption>
+        </figure>
+      `
+    )
+  })
+}
+
 window.onload = function () {
-  var timelineContainer = document.querySelector('.schedule-timeline')
+  const timelineContainer = document.querySelector('.schedule-timeline')
+  const speakersContainer = document.querySelector('.speakerContainer')
   timelineContainer.innerHTML = timelineTemplate(timeline);
+  speakersContainer.innerHTML = speakerTemplate(speakersData);
 };
