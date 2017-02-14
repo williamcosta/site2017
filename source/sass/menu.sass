@@ -74,17 +74,16 @@
     position: fixed
     top: 0
     right: 0
-    bottom: 0
+    left: auto
     z-index: 2
     background: transparent
-    width: 100%
-
+    width: 56px
+    height: 56px
 
     ul
       position: absolute
       top: 0
       right: 0
-      bottom: 0
       display: block
       transform: translate(100%,0)
       transition: all .25s ease-in
@@ -92,6 +91,7 @@
       width: 250px
       will-change: transform
       overflow: auto
+      padding: 10px 0
       z-index: 2
 
       li
@@ -121,7 +121,7 @@
     transform: translate(0,0)
     transition: all .25s ease-in
     padding: 17px
-    box-shadow: 0 0 8px 5px rgba($white, .1)
+    box-shadow: 0 0 8px 5px rgba($white, .2)
 
     svg
       fill: rgba($white, .9)
