@@ -1,3 +1,13 @@
+.menu-control {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
 .menu {
   background: black;
   padding-bottom: 30px;
@@ -22,21 +32,35 @@
     transition: color .35s ease-in; }
     .menu a:hover, .menu a:focus {
       color: #fff; }
+  .menu ~ section {
+    -webkit-transition: all .35s ease-in;
+    transition: all .35s ease-in; }
 
 .menu-button {
   display: none; }
 
-#menu-control {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
-
 @media screen and (max-width: 767px) {
+  .menu-control:checked ~ .menu ul {
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  .menu-control:checked ~ .menu .menu-button {
+    -webkit-transform: translate(-250px, 0);
+            transform: translate(-250px, 0);
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .menu-control:checked ~ .menu .menu-button .icon-menu {
+      display: none; }
+    .menu-control:checked ~ .menu .menu-button .icon-close-menu {
+      display: block; }
+  .menu-control:checked ~ .menu .menu-overlay {
+    visibility: visible; }
+  .menu-control:checked ~ section {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    -webkit-transition: all .45s ease;
+    transition: all .45s ease; }
   .menu {
     position: fixed;
     top: 0;
@@ -45,25 +69,6 @@
     z-index: 2;
     background: transparent;
     width: 100%; }
-    .menu input:checked ~ ul {
-      -webkit-transition: all .2s ease-out;
-      transition: all .2s ease-out;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0); }
-    .menu input:checked ~ .menu-button {
-      -webkit-transform: translate(-250px, 0);
-              transform: translate(-250px, 0);
-      -webkit-transition: all .2s ease-out;
-      transition: all .2s ease-out; }
-      .menu input:checked ~ .menu-button .icon-menu {
-        display: none; }
-      .menu input:checked ~ .menu-button .icon-close-menu {
-        display: block; }
-    .menu input:checked ~ .menu-overlay {
-      visibility: visible;
-      opacity: 1;
-      -webkit-transition: opacity .25s ease-in .10s;
-      transition: opacity .25s ease-in .10s; }
     .menu ul {
       position: absolute;
       top: 0;
@@ -103,7 +108,8 @@
             transform: translate(0, 0);
     -webkit-transition: all .25s ease-in;
     transition: all .25s ease-in;
-    padding: 17px; }
+    padding: 17px;
+    box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.1); }
     .menu-button svg {
       fill: rgba(255, 255, 255, 0.9);
       width: 20px; }
