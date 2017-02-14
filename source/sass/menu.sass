@@ -1,5 +1,15 @@
 @import 'variables'
 
+.menu-control
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  border: 0
+
 .menu
   background: rgba($black, 8)
   padding-bottom: 30px
@@ -25,20 +35,40 @@
     &:focus
       color: $white
 
+  ~ section
+    transition: all .35s ease-in
+
 .menu-button
   display: none
 
-#menu-control
-  position: absolute
-  width: 1px
-  height: 1px
-  margin: -1px
-  padding: 0
-  overflow: hidden
-  clip: rect(0,0,0,0)
-  border: 0
 
 @media screen and (max-width: 767px)
+
+
+  .menu-control:checked
+
+    ~ .menu
+
+      ul
+        transition: all .2s ease-out
+        transform: translate(0,0)
+
+      .menu-button
+        transform: translate(-250px,0)
+        transition: all .2s ease-out
+
+        .icon-menu
+          display: none
+
+        .icon-close-menu
+          display: block
+
+      .menu-overlay
+        visibility: visible
+
+    ~ section
+      filter: blur(10px)
+      transition: all .45s ease
 
   .menu
     position: fixed
@@ -49,25 +79,6 @@
     background: transparent
     width: 100%
 
-    input:checked
-      ~ ul
-        transition: all .2s ease-out
-        transform: translate(0,0)
-
-      ~ .menu-button
-        transform: translate(-250px,0)
-        transition: all .2s ease-out
-
-        .icon-menu
-          display: none
-
-        .icon-close-menu
-          display: block
-
-      ~ .menu-overlay
-          visibility: visible
-          opacity: 1
-          transition: opacity .25s ease-in .10s
 
     ul
       position: absolute
@@ -110,6 +121,7 @@
     transform: translate(0,0)
     transition: all .25s ease-in
     padding: 17px
+    box-shadow: 0 0 8px 5px rgba($white, .1)
 
     svg
       fill: rgba($white, .9)
