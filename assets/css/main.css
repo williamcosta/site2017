@@ -324,3 +324,7 @@ body {
 .contact {
   text-align: center;
   padding: 70px 0; }
+
+@media screen and (max-width: 767px) {
+  .event {
+    margin-top: 100px; } }
