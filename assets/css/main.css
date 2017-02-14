@@ -326,5 +326,17 @@ body {
   padding: 70px 0; }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 100%; }
   .event {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  .info .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .info .slogan {
+    width: 100%; }
+  .colors-left,
+  .colors-right {
+    display: none; } }
