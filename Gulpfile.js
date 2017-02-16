@@ -84,6 +84,13 @@ gulp.task('index', gulp.series(
   'svg'
 ));
 
+gulp.task('cname', gulp.series(
+  function() {
+    return gulp.src('./source/CNAME')
+      .pipe(gulp.dest('./build'));
+  }
+));
+
 gulp.task('reset', function() {
   return require('del')('./build');
 });
@@ -92,6 +99,7 @@ gulp.task('default', gulp.series(
   'reset',
   'index',
   'images',
+  'cname',
   function() {
     browserSync({
       server: {
