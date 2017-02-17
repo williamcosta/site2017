@@ -142,12 +142,12 @@ const speakerTemplate = (speaker) => {
     return (
       `
         <figure class="speaker-item">
-          <img src="assets/images/speaker.jpg" alt="">
+          <img src="${ item.photo }" alt="">
           <figcaption>
-            <p>${ speaker.name }</p>
+            <p>${ item.name }</p>
             <p>
-              Typographer & Illustrator
-              <a href="${ speaker.twitterLink }" target="_blank">${ speaker.twitter }</a>
+              ${ item.role }
+              <a href="${ item.twitterLink }" target="_blank">${ item.twitter }</a>
             </p>
           </figcaption>
         </figure>
