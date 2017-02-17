@@ -9,6 +9,10 @@ $pill-yellow: #FBC54C
   position: absolute
   left: -50px
   text-align: left
+  opacity: .2
+
+  @media screen and (min-width: $medium)
+    opacity: 1
 
   div
     margin-bottom: 25px
@@ -85,6 +89,10 @@ $pill-yellow: #FBC54C
   position: absolute
   right: -120px
   text-align: center
+  display: none
+
+  @media screen and (min-width: $medium)
+    display: block
 
   div
     margin-bottom: 25px

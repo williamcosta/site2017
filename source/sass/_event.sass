@@ -1,0 +1,32 @@
+.event
+  max-width: 100%
+  padding: 6rem 0 8rem 0
+  position: relative
+  overflow: hidden
+  text-align: center
+  color: $gray
+  font-size: 1.3rem
+
+  @media screen and (min-width: $large)
+    padding: 12rem 0 10rem 0
+
+  & > *:not(:last-child)
+    margin-bottom: 4rem
+
+  p
+    color: $white
+
+    @media screen and (min-width: $medium)
+      color: $gray
+
+  a
+    background: $red
+    color: $white
+
+  svg
+    width: 90%
+    height: auto
+
+    @media screen and (min-width: $large)
+      width: initial
+      height: initial

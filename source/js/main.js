@@ -125,11 +125,11 @@ const timelineTemplate = (timeline) => {
         <div class="timeline-block">
           <div class="timeline-circle"></div>
           <div class="timeline-content">
-            <p class="timeline-date">${ item.hour }</p>
-            <h2>${ item.title }</h2>
+            <h3>${ item.title }</h3>
+            <p>${ item.hour }</p>
             <p>${ item.description }</p>
             <p class="timeline-speaker">${ item.speaker }</p>
-            <a href="#" class="more-details">+ detalhes</a>
+            <p><a href="#">+ detalhes</a></p>
           </div>
         </div>
       `
@@ -144,19 +144,21 @@ const speakerTemplate = (speaker) => {
         <figure class="speaker-item">
           <img src="assets/images/speaker.jpg" alt="">
           <figcaption>
-            <span class="name">${ speaker.name }</span>
-            <p class="bio">Typographer & Illustrator</p>
-            <a href="${ speaker.twitterLink }" class="social" target="_blank">${ speaker.twitter }</a>
+            <p>${ speaker.name }</p>
+            <p>
+              Typographer & Illustrator
+              <a href="${ speaker.twitterLink }" target="_blank">${ speaker.twitter }</a>
+            </p>
           </figcaption>
         </figure>
       `
     )
-  })
+  }).join('')
 }
 
 window.onload = function () {
-  const timelineContainer = document.querySelector('.schedule-timeline')
-  const speakersContainer = document.querySelector('.speakerContainer')
+  const timelineContainer = document.querySelector('[data-schedule]')
+  const speakersContainer = document.querySelector('[data-speaker]')
   timelineContainer.innerHTML = timelineTemplate(timeline);
   speakersContainer.innerHTML = speakerTemplate(speakersData);
 };

@@ -1,0 +1,54 @@
+.info
+  background: $white
+  color: $gray
+
+  a,
+  h2
+    color: $black
+
+  .container > *:not(:last-child)
+    margin-bottom: $margin
+
+  .slogan
+    flex: 0 0 100%
+    max-width: 100%
+
+    @media screen and (min-width: $medium)
+      flex-shrink: 40%
+      max-width: 40%
+      padding-right: $gutter * 2
+
+    h2
+      font-size: 1.8rem
+      font-weight: 300
+      line-height: 1.5
+      font-family: $font
+
+  .description
+    flex: 0 0 100%
+    max-width: 100%
+    font-size: .95rem
+
+    @media screen and (min-width: $medium)
+      flex-shrink: 60%
+      max-width: 60%
+
+    & > *
+      &:not(:last-child)
+        margin-bottom: $margin
+
+      &:last-child
+        margin-bottom: 0
+
+    p
+      line-height: 1.8em
+
+    svg
+      width: 1.1rem
+      height: 1.1rem
+      margin-right: .4rem
+      vertical-align: middle
+
+    a
+      font-family: $font
+      text-decoration: underline

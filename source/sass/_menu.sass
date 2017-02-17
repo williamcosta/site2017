@@ -11,25 +11,26 @@
   border: 0
 
 .menu
-  background: rgba($black, 8)
-  padding-bottom: 30px
+  background: rgba($black, .8)
   position: fixed
   width: 100%
   top: 0
   left: 0
+  z-index: 2
 
   ul
     display: flex
     justify-content: center
 
   li
-    margin: 40px 20px 0
+    padding: 0 1rem
 
   a
     color: rgba($white, .6)
     text-transform: uppercase
-    font-size: 16px
     transition: color .35s ease-in
+    padding: 2rem 0
+    display: inline-block
 
     &:hover,
     &:focus
@@ -121,7 +122,6 @@
     transform: translate(0,0)
     transition: all .25s ease-in
     padding: 17px
-    box-shadow: 0 0 8px 5px rgba($white, .2)
 
     svg
       fill: rgba($white, .9)
@@ -138,4 +138,3 @@
     transition: opacity .25s ease-in
     background: rgba($white,.3)
     z-index: 1
-
