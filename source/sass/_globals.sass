@@ -1,6 +1,11 @@
 .section-group
-  padding-top: $section-padding
-  padding-bottom: $section-padding
+  padding-top: $section-padding/4
+  padding-bottom: $section-padding/4
+
+  @media screen and (min-width: $large)
+    padding-top: $section-padding
+    padding-bottom: $section-padding
+
 
 .container
   display: flex
