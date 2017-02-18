@@ -2,59 +2,59 @@
 
 var speakersData = [
   {
+    name: 'Fábio Vedovelli',
+    role: 'Trabalha atualmente como Web developer para Octimine GmbH (Munique/Alemanha) e é entusiasta Vue.js',
+    twitter: '@vedovelli',
+    twitterLink: 'http://twitter.com/vedovelli',
+    photo: 'assets/images/fabio-vedovelli-frontinsampa.jpg'
+  },
+  {
+    name: 'Bianca Brancaleone',
+    role: 'Sócia do Eu Compraria, Especialista em UX e Google Expert em UX, organizadora do GDG e Women Techmakers de Sorocaba',
+    twitter: '@biab',
+    twitterLink: 'http://twitter.com/biab',
+    photo: 'assets/images/bianca-brancaleone-frontinsampa.jpg'
+  },
+  {
+    name: 'Raphael Fabeni',
+    role: 'Desenvolvedor na RedVentures e criador/organizador do #MeetupCSS SP',
+    twitter: '@raphaelfabeni',
+    twitterLink: 'http://twitter.com/raphaelfabeni',
+    photo: 'assets/images/raphael-fabeni-frontinsampa.jpg'
+  },
+  {
+    name: 'Patrícia Silva',
+    role: 'Front-end Developer at MATERA Systems (Campinas/SP)',
+    twitter: '@Paty_Go',
+    twitterLink: 'http://twitter.com/Paty_Go',
+    photo: 'assets/images/patricia-silva-frontinsampa.jpg'
+  },
+  {
+    name: 'Bruno Genaro',
+    role: 'Desenvolvedor Front-End na Cisco em Orlando/FL (USA) e organizador do OrlandoJS Meetup.',
+    twitter: '@bfgenaro',
+    twitterLink: 'http://twitter.com/bfgenaro',
+    photo: 'assets/images/bruno-genaro-frontinsampa.jpg'
+  },
+  {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische',
+    twitterLink: 'http://twitter.com/jscahische',
     photo: 'assets/images/speaker.jpg'
   },
   {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische',
+    twitterLink: 'http://twitter.com/jscahische',
     photo: 'assets/images/speaker.jpg'
   },
   {
     name: 'Jessica Hische',
     role: 'Typographer & Illustrator',
     twitter: 'jscahische',
-    twitterLink: '/jscahische',
-    photo: 'assets/images/speaker.jpg'
-  },
-  {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: '/jscahische',
-    photo: 'assets/images/speaker.jpg'
-  },
-  {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: '/jscahische',
-    photo: 'assets/images/speaker.jpg'
-  },
-  {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: '/jscahische',
-    photo: 'assets/images/speaker.jpg'
-  },
-  {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: '/jscahische',
-    photo: 'assets/images/speaker.jpg'
-  },
-  {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: '/jscahische',
+    twitterLink: 'http://twitter.com/jscahische',
     photo: 'assets/images/speaker.jpg'
   }
 ]
@@ -142,7 +142,7 @@ const speakerTemplate = (speaker) => {
     return (
       `
         <figure class="speaker-item">
-          <img src="${ item.photo }" alt="">
+          <img src="${ item.photo }" alt="Palestrante ${ item.name }">
           <figcaption>
             <p>${ item.name }</p>
             <p>
