@@ -22,7 +22,10 @@
 .title
   font: 300 $heading-highlight $font
   text-align: center
-  margin-bottom: $section-padding
+  margin-bottom: $section-padding/3
+
+  @media screen and (min-width: $medium)
+    margin-bottom: $section-padding
 
 .button
   padding: 1.3rem 2rem
