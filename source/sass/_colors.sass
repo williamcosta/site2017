@@ -5,11 +5,22 @@ $pill-green: #7BE473
 $pill-purple: #DA83F7
 $pill-yellow: #FBC54C
 
+//Config children
+$height-colors: 29px
+$width-1: 6%
+$width-2: 8%
+$width-3: 11%
+$width-4: 15%
+$width-5: 25%
+$width-6: 44%
+$width-parent: 40%
+
 .colors-left
   position: absolute
   left: -50px
   text-align: left
   opacity: .2
+  width: $width-parent
 
   @media screen and (min-width: $medium)
     opacity: 1
@@ -23,66 +34,66 @@ $pill-yellow: #FBC54C
   i
     position: relative
     display: inline-block
-    height: 29px
+    height: $height-colors
     border-radius: 4rem;
-    width: 29px
+    width: $width-1
     margin-left: 14px
     margin-right: 14px
 
   &-line1
     i
       &:nth-child(1)
-        width: 51px
+        width: $width-3
         background: $pill-red
 
       &:nth-child(2)
-        width: 118px
+        width: $width-5
         background: $pill-green
 
       &:nth-child(3)
-        width: 39px
+        width: $width-2
         background: #fff
 
       &:nth-child(4)
-        width: 29px
+        width: $width-1
         background: $pill-blue
 
   &-line2
     i
       &:nth-child(1)
-        width: 211px
+        width: $width-6
         background: $pill-red
 
       &:nth-child(2)
-        width: 50px
+        width: $width-3
         background: $pill-purple
 
       &:nth-child(3)
-        width: 39px
+        width: $width-2
         background: $pill-green
 
       &:nth-child(4)
-        width: 73px
+        width: $width-4
         background: $pill-yellow
 
   &-line3
     i
       &:nth-child(1)
-        width: 50px
+        width: $width-3
         background: $pill-red
 
       &:nth-child(2)
-        width: 39px
+        width: $width-2
         background: $pill-blue
 
       &:nth-child(3)
-        width: 119px
+        width: $width-5
         background: $pill-yellow
 
   &-line4
     i
       &:nth-child(1)
-        width: 211px
+        width: $width-6
         background: $pill-purple
 
 .colors-right
@@ -90,6 +101,7 @@ $pill-yellow: #FBC54C
   right: -120px
   text-align: center
   display: none
+  width: $width-parent
 
   @media screen and (min-width: $medium)
     display: block
@@ -103,62 +115,62 @@ $pill-yellow: #FBC54C
   i
     position: relative
     display: inline-block
-    height: 29px
+    height: $height-colors
     border-radius: 4rem;
-    width: 29px
+    width: $width-1
     margin-left: 14px
     margin-right: 14px
 
   &-line1
     i
       &:nth-child(1)
-        width: 29px
+        width: $width-1
         background: $pill-blue
 
       &:nth-child(2)
-        width: 50px
+        width: $width-3
         background: $pill-yellow
 
       &:nth-child(3)
-        width: 39px
+        width: $width-2
         background: $pill-purple
 
       &:nth-child(4)
-        width: 119px
+        width: $width-5
         background: #fff
 
   &-line2
     i
       &:nth-child(1)
-        width: 119px
+        width: $width-5
         background: #fff
 
       &:nth-child(2)
-        width: 39px
+        width: $width-2
         background: $pill-green
 
       &:nth-child(3)
-        width: 29px
+        width: $width-1
         background: $pill-red
 
       &:nth-child(4)
-        width: 212px
+        width: $width-6
         background: $pill-blue
 
   &-line3
     i
       &:nth-child(1)
-        width: 50px
+        width: $width-3
         background: $pill-red
 
       &:nth-child(2)
-        width: 39px
+        width: $width-2
         background: $pill-purple
 
       &:nth-child(3)
-        width: 73px
+        width: $width-4
         background: #fff
 
       &:nth-child(4)
-        width: 119px
+        width: $width-5
         background: $pill-green
