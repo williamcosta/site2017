@@ -121,7 +121,7 @@
         </div>
       </div>
 
-      <svg width="428" height="184" viewBox="170 211 428 184" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
+      <svg width="428" height="184" viewBox="170 211 428 184" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <path id="a" d="M.353 39.541H25.05V.405H.353z"></path>
           <path id="c" d="M27.11 38.344V.306H.46v38.038z"></path>
@@ -188,16 +188,17 @@
     <section class="section-group speaker-list">
       <h2 class="title">Palestrantes</h2>
 
-      <div class="container" data-speaker>
-        <!-- Speakers JS component Reference -->
-      </div>
+      <!-- Speakers JS component Reference. -->
+      <div class="container" data-speaker></div>
+      <!-- I pray for a world with + [data-attr] and - .class manipulation. -->
     </section>
 
     <section class="section-group schedule">
       <h2 class="title">Programação</h2>
 
-      <!-- Timeline JS Component Reference -->
+      <!-- Timeline JS Component Reference. -->
       <div class="schedule-timeline" data-schedule></div>
+      <!-- I pray for a world with + [data-attr] and - .class manipulation. -->
     </section>
 
     <section class="section-group local">
@@ -221,16 +222,49 @@
       <div class="container">
         <h2 class="title">Contato</h2>
 
-        <h3>QUER PATROCINAR? DÚVIDAS? SUGESTÕES? <br /> escreva pra gente</h3>
+        <h3>QUER PATROCINAR? DÚVIDAS? SUGESTÕES?</h3>
 
-        <a href="mailto:frontinsampa@gmail.com">frontinsampa@gmail.com</a>
+        <p>Escreva pra gente</p>
+        <p><a href="mailto:frontinsampa@gmail.com">frontinsampa@gmail.com</a><p>
 
-        <h4>Acompanhe o Frontinsampa</h4>
+        <h4>ACOMPANHE O FRONTINSAMPA ATRAVÉS DAS REDES SOCIAIS:</h4>
 
         <ul>
-          <li><a href="" aria-label="" target="_blank">Instagram</a></li>
-          <li><a href="" aria-label="" target="_blank">Facebook</a></li>
-          <li><a href="" aria-label="" target="_blank">Twitter</a></li>
+          <li>
+            <a href="https://www.instagram.com/frontinsampa/" aria-label="Ir para o Instagram do Front In Sampa" target="_blank">
+              <span aria-hidden="true">Instagram</span>
+              <svg width="30" height="30">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/frontinsampa/" aria-label="Ir para o Facebook do Front In Sampa" target="_blank">
+              <span aria-hidden="true">Facebook</span>
+              <svg width="30" height="30">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/UCwoGd_KU0OxiVT5r-rPrzWA" aria-label="Ir para o YouTube do Front In Sampa" target="_blank">
+              <span aria-hidden="true">YouTube</span>
+              <svg width="30" height="30">
+                <use xlink:href="#youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/frontinsp" aria-label="Ir para o Twitter do Front In Sampa">
+              <span aria-hidden="true">Twitter</span>
+              <svg width="30" height="30">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </section>

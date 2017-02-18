@@ -1,2 +1,33 @@
 .contact
   color: $white
+  text-align: center
+
+  .container > *:not(h2):not(:last-child)
+    margin-bottom: 1.3rem
+
+  h3,
+  h4
+    font: 400 $heading-large $font
+
+  h4
+    font-size: $heading-medium
+    font-weight: 500
+    color: $gray
+
+  a[href*="mailto"]
+    display: block
+    margin-bottom: $margin
+    color: $blue
+    text-decoration: underline
+
+  p
+    &:first-of-type
+      font: 400 $heading-large $font
+
+  ul
+    display: flex
+    align-items: center
+    justify-content: center
+
+  li
+    padding: 0 $gutter
