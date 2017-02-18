@@ -15,22 +15,10 @@ $width-5: 25%
 $width-6: 44%
 $width-parent: 40%
 
-.colors-left
+.colors-left,
+.colors-right
   position: absolute
-  left: -50px
-  text-align: left
-  opacity: .2
   width: $width-parent
-
-  @media screen and (min-width: $medium)
-    opacity: 1
-    width: $width-parent - 5%
-
-  div
-    margin-bottom: 25px
-
-    &:last-child
-      margin-bottom: 0
 
   i
     position: relative
@@ -40,6 +28,22 @@ $width-parent: 40%
     width: $width-1
     margin-left: 14px
     margin-right: 14px
+    min-width: $height-colors
+
+  div
+    margin-bottom: 25px
+
+    &:last-child
+      margin-bottom: 0
+
+.colors-left
+  text-align: left
+  left: -50px
+  opacity: .2
+
+  @media screen and (min-width: $medium)
+    opacity: 1
+    width: $width-parent - 5%
 
   &-line1
     i
@@ -53,7 +57,7 @@ $width-parent: 40%
 
       &:nth-child(3)
         width: $width-2
-        background: #fff
+        background: $white
 
       &:nth-child(4)
         width: $width-1
@@ -98,29 +102,11 @@ $width-parent: 40%
         background: $pill-purple
 
 .colors-right
-  position: absolute
   right: -120px
   text-align: center
-  display: none
-  width: $width-parent
 
   @media screen and (min-width: $medium)
     display: block
-
-  div
-    margin-bottom: 25px
-
-    &:last-child
-      margin-bottom: 0
-
-  i
-    position: relative
-    display: inline-block
-    height: $height-colors
-    border-radius: 4rem;
-    width: $width-1
-    margin-left: 14px
-    margin-right: 14px
 
   &-line1
     i
@@ -138,13 +124,13 @@ $width-parent: 40%
 
       &:nth-child(4)
         width: $width-5
-        background: #fff
+        background: $white
 
   &-line2
     i
       &:nth-child(1)
         width: $width-5
-        background: #fff
+        background: $white
 
       &:nth-child(2)
         width: $width-2
@@ -170,7 +156,7 @@ $width-parent: 40%
 
       &:nth-child(3)
         width: $width-4
-        background: #fff
+        background: $white
 
       &:nth-child(4)
         width: $width-5
