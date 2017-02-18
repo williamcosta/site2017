@@ -1,13 +1,18 @@
 .info
   background: $white
   color: $gray
+  position: relative
 
   a,
   h2
     color: $black
 
-  .container > *:not(:last-child)
-    margin-bottom: $margin
+  .container
+    position: relative
+    z-index: 2
+
+    > *:not(:last-child)
+      margin-bottom: $margin
 
   .slogan
     flex: 0 0 100%
