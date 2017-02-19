@@ -568,7 +568,7 @@ body {
 
 .local {
   color: #fff;
-  background: url(../images/bg-local-mobile.png) no-repeat 0 0;
+  background: url(../images/bg-local-mobile.jpg) no-repeat 0 0;
   background-size: cover; }
   @media screen and (min-width: 640px) {
     .local {
