@@ -167,7 +167,7 @@ const clickMenu = () => {
 
 const contextMenuListener = (menu) => {
   let navCheckbox = document.querySelector('[data-check]');
-  let button = document.querySelector('.menu-button');
+  let button = document.querySelector('[data-menu-mobile]');
 
   menu.addEventListener( "click", function(e) {
     button.click()
