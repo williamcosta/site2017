@@ -595,7 +595,11 @@ body {
     background: #da83f6; }
 
 .sponsors {
-  background: #fff; }
+  background: #fff;
+  text-align: center; }
+  .sponsors .subtitle {
+    font: 300 1.4rem "Roboto Mono", monospace, serif;
+    margin-bottom: 1.5rem; }
 
 .contact {
   color: #fff;
