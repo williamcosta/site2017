@@ -1,9 +1,11 @@
 .local
   color: $white
-  background: url(../images/bg-local-mobile.png) no-repeat 0 0 fixed
+  background: url(../images/bg-local-mobile.png) no-repeat 0 0
+  background-size: cover
 
   @media screen and (min-width: $medium)
     background-image: url(../images/bg-local.png)
+    background-attachment: fixed
 
   .title
     margin-bottom: 70px

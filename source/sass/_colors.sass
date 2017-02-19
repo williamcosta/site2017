@@ -29,7 +29,9 @@ $width-parent: 45%
     width: $width-1
     margin-left: 14px
     margin-right: 14px
-    min-width: $height-colors
+
+    @media screen and (min-width: $medium)
+      min-width: $height-colors
 
   div
     margin-bottom: 25px
@@ -41,7 +43,7 @@ $width-parent: 45%
   text-align: left
   left: -50px
   opacity: .2
-
+  width: $width-parent + 75
 
   .info &
     bottom: 30px
