@@ -343,17 +343,15 @@ body {
 
 .event {
   max-width: 100%;
-  padding: 2rem 0;
+  padding: 3rem 0;
   position: relative;
   overflow: hidden;
   text-align: center;
   color: #636363;
-  font-size: 1.3rem;
-  height: 100vh; }
+  font-size: 1.3rem; }
   @media screen and (min-width: 1024px) {
     .event {
-      padding: 12rem 0 10rem 0;
-      height: auto; } }
+      padding: 12rem 0 10rem 0; } }
   .event > *:not(:last-child) {
     margin-bottom: 4rem; }
   .event p {
