@@ -119,7 +119,7 @@ var timeline = [
 ]
 
 const timelineTemplate = (timeline) => {
-  return timeline.map((item, index) => {
+  return timeline.map((item) => {
     return (
       `
         <div class="timeline-block">
@@ -138,7 +138,7 @@ const timelineTemplate = (timeline) => {
 }
 
 const speakerTemplate = (speaker) => {
-  return speaker.map((item, index) => {
+  return speaker.map((item) => {
     return (
       `
         <figure class="speaker-item">
