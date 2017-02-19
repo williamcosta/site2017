@@ -348,10 +348,12 @@ body {
   overflow: hidden;
   text-align: center;
   color: #636363;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  height: 100vh; }
   @media screen and (min-width: 1024px) {
     .event {
-      padding: 12rem 0 10rem 0; } }
+      padding: 12rem 0 10rem 0;
+      height: auto; } }
   .event > *:not(:last-child) {
     margin-bottom: 4rem; }
   .event p {
