@@ -177,9 +177,8 @@ const contextMenuListener = (menu) => {
 
 window.onload = function () {
   clickMenu();
-  const timelineContainer = document.querySelector('[data-schedule]')
+  // const timelineContainer = document.querySelector('[data-schedule]')
   const speakersContainer = document.querySelector('[data-speaker]')
-  const menuLink = document.querySelector('[data-menu]').children;
-  timelineContainer.innerHTML = timelineTemplate(timeline);
+  // timelineContainer.innerHTML = timelineTemplate(timeline);
   speakersContainer.innerHTML = speakerTemplate(speakersData);
 };
