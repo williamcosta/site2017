@@ -156,9 +156,30 @@ const speakerTemplate = (speaker) => {
   }).join('')
 }
 
+const clickMenu = () => {
+  let taskItems = document.querySelectorAll('[data-menu-link]');
+
+  for ( let i = 0, len = taskItems.length; i < len; i++ ) {
+    let taskItem = taskItems[i];
+    contextMenuListener(taskItem);
+  }
+}
+
+const contextMenuListener = (menu) => {
+  let navCheckbox = document.querySelector('[data-check]');
+  let button = document.querySelector('.menu-button');
+
+  menu.addEventListener( "click", function(e) {
+    button.click()
+  });
+
+}
+
 window.onload = function () {
+  clickMenu();
   const timelineContainer = document.querySelector('[data-schedule]')
   const speakersContainer = document.querySelector('[data-speaker]')
+  const menuLink = document.querySelector('[data-menu]').children;
   timelineContainer.innerHTML = timelineTemplate(timeline);
   speakersContainer.innerHTML = speakerTemplate(speakersData);
 };

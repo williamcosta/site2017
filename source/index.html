@@ -43,7 +43,7 @@
   </head>
 
   <body class="is-normal">
-    <input aria-label="Se estiver em um dispositivo móvel, selecione este item, para exibir o Menu de navegação" type="checkbox" name="menu-control" class="menu-control" id="menu-control">
+    <input data-check aria-label="Se estiver em um dispositivo móvel, selecione este item, para exibir o Menu de navegação" type="checkbox" name="menu-control" class="menu-control" id="menu-control">
     <div style="display: none;">
       <!-- inject:svg -->
       <!-- endinject -->
@@ -65,14 +65,14 @@
       </label>
       <label for="menu-control" class="menu-overlay"></label>
 
-      <ul>
-        <li><a href="#" role="menuitem" aria-label="Saiba mais sobre o Frontinsampa 2017">Sobre nós</a></li>
-        <li><a href="#" role="menuitem" aria-label="Confira os palestrantes do evento">Palestrantes</a></li>
-        <li><a href="#" role="menuitem" aria-label="Confira a programação do evento">Programação</a></li>
-        <li><a href="#" role="menuitem" aria-label="Saiba aonde será realizado o evento">Local</a></li>
-        <li><a href="#" role="menuitem" aria-label="Confira a empresas que patrocinam o evento">Patrocinadores</a></li>
-        <li><a href="#" role="menuitem" aria-label="Entre em contato conosco">Contato</a></li>
-        <li><a href="#" role="menuitem" aria-label="Faça agora sua inscrição">Inscreva-se</a></li>
+      <ul data-menu>
+        <li><a href="#" data-menu-link role="menuitem" aria-label="Saiba mais sobre o Frontinsampa 2017">Sobre nós</a></li>
+        <li><a href="#" data-menu-link role="menuitem" aria-label="Confira os palestrantes do evento">Palestrantes</a></li>
+        <li><a href="#" data-menu-link role="menuitem" aria-label="Confira a programação do evento">Programação</a></li>
+        <li><a href="#" data-menu-link role="menuitem" aria-label="Saiba aonde será realizado o evento">Local</a></li>
+        <li><a href="#" data-menu-link role="menuitem" aria-label="Confira a empresas que patrocinam o evento">Patrocinadores</a></li>
+        <li><a href="#" data-menu-link="contact" role="menuitem" aria-label="Entre em contato conosco">Contato</a></li>
+        <li><a href="#" data-menu-link role="menuitem" aria-label="Faça agora sua inscrição">Inscreva-se</a></li>
       </ul>
     </nav>
 
