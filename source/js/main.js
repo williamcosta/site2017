@@ -4,57 +4,57 @@ var speakersData = [
   {
     name: 'Fábio Vedovelli',
     role: 'Trabalha atualmente como Web developer para Octimine GmbH (Munique/Alemanha) e é entusiasta Vue.js',
-    twitter: '@vedovelli',
-    twitterLink: 'http://twitter.com/vedovelli',
+    label: '@vedovelli',
+    link: 'http://twitter.com/vedovelli',
     photo: 'assets/images/fabio-vedovelli-frontinsampa.jpg'
   },
   {
     name: 'Bianca Brancaleone',
     role: 'Sócia do Eu Compraria, Especialista em UX e Google Expert em UX, organizadora do GDG e Women Techmakers de Sorocaba',
-    twitter: '@biab',
-    twitterLink: 'http://twitter.com/biab',
+    label: '@biab',
+    link: 'http://twitter.com/biab',
     photo: 'assets/images/bianca-brancaleone-frontinsampa.jpg'
   },
   {
     name: 'Raphael Fabeni',
     role: 'Desenvolvedor na RedVentures e criador/organizador do #MeetupCSS SP',
-    twitter: '@raphaelfabeni',
-    twitterLink: 'http://twitter.com/raphaelfabeni',
+    label: '@raphaelfabeni',
+    link: 'http://twitter.com/raphaelfabeni',
     photo: 'assets/images/raphael-fabeni-frontinsampa.jpg'
   },
   {
     name: 'Patrícia Silva',
     role: 'Front-end Developer at MATERA Systems (Campinas/SP)',
-    twitter: '@Paty_Go',
-    twitterLink: 'http://twitter.com/Paty_Go',
+    label: '@Paty_Go',
+    link: 'http://twitter.com/Paty_Go',
     photo: 'assets/images/patricia-silva-frontinsampa.jpg'
   },
   {
     name: 'Bruno Genaro',
     role: 'Desenvolvedor Front-End na Cisco em Orlando/FL (USA) e organizador do OrlandoJS Meetup.',
-    twitter: '@bfgenaro',
-    twitterLink: 'http://twitter.com/bfgenaro',
+    label: '@bfgenaro',
+    link: 'http://twitter.com/bfgenaro',
     photo: 'assets/images/bruno-genaro-frontinsampa.jpg'
   },
   {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: 'http://twitter.com/jscahische',
+    name: 'Call4papers',
+    role: 'Seja um(a) palestrante do nosso evento',
+    label: 'EM BREVE',
+    link: '/',
     photo: 'assets/images/speaker.jpg'
   },
   {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: 'http://twitter.com/jscahische',
+    name: 'Call4papers',
+    role: 'Seja um(a) palestrante do nosso evento',
+    label: 'EM BREVE',
+    link: '/',
     photo: 'assets/images/speaker.jpg'
   },
   {
-    name: 'Jessica Hische',
-    role: 'Typographer & Illustrator',
-    twitter: 'jscahische',
-    twitterLink: 'http://twitter.com/jscahische',
+    name: 'Call4papers',
+    role: 'Seja um(a) palestrante do nosso evento',
+    label: 'EM BREVE',
+    link: '/',
     photo: 'assets/images/speaker.jpg'
   }
 ]
@@ -147,7 +147,7 @@ const speakerTemplate = (speaker) => {
             <p>${ item.name }</p>
             <p>
               ${ item.role }
-              <a href="${ item.twitterLink }" target="_blank">${ item.twitter }</a>
+              <a href="${ item.link }" target="_blank">${ item.label }</a>
             </p>
           </figcaption>
         </figure>
