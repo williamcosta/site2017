@@ -169,9 +169,16 @@ const contextMenuListener = (menu) => {
   let navCheckbox = document.querySelector('[data-check]');
   let button = document.querySelector('[data-menu-mobile]');
 
-  menu.addEventListener( "click", function(e) {
+  menu.addEventListener('click', () => {
     button.click()
   });
+}
+
+const toogleInvertColor = () => {
+  let elem = document.querySelector('[data-invert-color]');
+  elem.addEventListener('click', () => {
+    document.body.classList.toggle('invert-color');
+  })
 }
 
 class FontSize {
@@ -265,6 +272,7 @@ window.onload = function () {
   new FontSize();
 
   clickMenu();
+  toogleInvertColor();
 
   const timelineContainer = document.querySelector('[data-schedule]')
   const speakersContainer = document.querySelector('[data-speaker]')

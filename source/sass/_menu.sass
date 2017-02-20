@@ -39,12 +39,13 @@
 
   ~ section
     transition: all .35s ease-in
+    will-change: filter
 
 .menu-button
   display: none
 
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: $large - 1)
   .menu-control
     display: block
 
@@ -151,7 +152,7 @@
   display: none
   cursor: pointer
 
-  @media screen and (min-width: $medium)
+  @media screen and (min-width: $large)
     display: block
 
   svg
@@ -159,7 +160,14 @@
     width: 30px
 
 .btn-size
-  right: 5%
+  right: 4%
+
+  &:nth-child(1)
+    top: 35px
+
+    svg
+      height: 15px
+      width: 24px
 
 .btn-invert
   right: calc(5% - 50px)
