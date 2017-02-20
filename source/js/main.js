@@ -172,13 +172,103 @@ const contextMenuListener = (menu) => {
   menu.addEventListener( "click", function(e) {
     button.click()
   });
+}
 
+class FontSize {
+  constructor() {
+    this.fontSize = document.querySelector('[data-font-size]');
+    this.fontSizeMore = this.fontSize.querySelector('[data-font-size-more]');
+    this.fontSizeLess = this.fontSize.querySelector('[data-font-size-less]');
+
+    if(!this.fontSize.hasAttribute('data-font-size-min')) {
+      console.error('data-font-size-min is required attribute to FontSize module.');
+      return;
+    }
+
+    if(!this.fontSize.hasAttribute('data-font-size-max')) {
+      console.error('data-font-size-max is required attribute to FontSize module.');
+      return;
+    }
+
+    if(typeof parseInt(this.fontSize.getAttribute('data-font-size-max')) !== 'number') {
+      console.error('data-font-size-max must be a number.');
+      return;
+    }
+
+    if(typeof parseInt(this.fontSize.getAttribute('data-font-size-min')) !== 'number') {
+      console.error('data-font-size-min must be a number.');
+      return;
+    }
+
+    this.settingsFontSizeMin = this.fontSize.getAttribute('data-font-size-min');
+    this.settingsFontSizeMax = this.fontSize.getAttribute('data-font-size-max');
+
+    this.init();
+  }
+
+  increaseSize() {
+    var n = this.getBodySize();
+
+    if(n < this.settingsFontSizeMax) {
+      n += 10;
+    }
+
+    this.setSize(n);
+    this.setBodySize(n);
+  }
+
+  decreaseSize() {
+    var n = this.getBodySize();
+
+    if(n > this.settingsFontSizeMin) {
+      n -= 10;
+    }
+
+    this.setSize(n);
+    this.setBodySize(n);
+  }
+
+  setSize(size) {
+    this.fontSize.setAttribute('data-font-size', size);
+  }
+
+  getBodySize() {
+    return parseInt(this.fontSize.getAttribute('data-font-size'));
+  }
+
+  setBodySize(size) {
+    document.getElementsByTagName('body')[0].style.fontSize = size + '%';
+  }
+
+  observe() {
+    if(this.fontSizeMore) {
+      this.fontSizeMore.addEventListener('click', () => {
+        this.increaseSize();
+      });
+    }
+
+    if(this.fontSizeLess) {
+      this.fontSizeLess.addEventListener('click', () => {
+        this.decreaseSize();
+      });
+    }
+  }
+
+  init() {
+    this.fontSize.setAttribute('data-font-size', 100);
+
+    this.observe();
+  }
 }
 
 window.onload = function () {
+  new FontSize();
+
   clickMenu();
+
   const timelineContainer = document.querySelector('[data-schedule]')
   const speakersContainer = document.querySelector('[data-speaker]')
+
   timelineContainer.innerHTML = timelineTemplate(timeline);
   speakersContainer.innerHTML = speakerTemplate(speakersData);
 };
