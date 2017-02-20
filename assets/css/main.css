@@ -232,8 +232,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   max-width: 1024px;
   margin: 0 auto;
   padding-left: 1rem;
@@ -566,8 +568,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
     .schedule .schedule-timeline::before {
       content: '';
       position: absolute;
@@ -720,6 +724,30 @@ a {
   text-align: center; }
   .sponsors h3 {
     margin-bottom: 1.5rem; }
+
+.sponsor-item {
+  margin-bottom: 4rem;
+  display: inline-block; }
+
+.staff-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0; }
+  .staff-list li {
+    margin: 0 1rem;
+    width: 150px; }
+  .staff-list img {
+    display: block;
+    margin-bottom: 10px; }
+  .staff-list .text-info {
+    display: block;
+    margin-bottom: 5px; }
+  .staff-list a {
+    color: #000; }
 
 .contact {
   color: #fff;
