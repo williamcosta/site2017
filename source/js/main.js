@@ -119,10 +119,10 @@ var timeline = [
 ]
 
 const timelineTemplate = (timeline) => {
-  return timeline.map((item) => {
+  return timeline.map((item, i) => {
     return (
       `
-        <div class="timeline-block">
+        <div class="timeline-block ${ i == 0 ? 'current' : '' }" data-timeline-bullet>
           <div class="timeline-content">
             <h3 class="text-medium">${ item.title }</h3>
             <p>${ item.hour }</p>
@@ -267,6 +267,42 @@ class FontSize {
   }
 }
 
+class Timeline {
+  constructor() {
+    this.timeline = document.querySelector('[data-timeline]');
+    this.timelineBullet = this.timeline.querySelectorAll('[data-timeline-bullet]');
+
+    this.init();
+  }
+
+  toggleBullet(bullet, bulletOrder) {
+    var bulletPosY = bullet.getBoundingClientRect().top;
+
+    if(bulletPosY <= (window.outerHeight / 2)) {
+      bullet.classList.add('current');
+      return;
+    }
+
+    if(bulletOrder === 0) {
+      return;
+    }
+
+    bullet.classList.remove('current');
+  }
+
+  observe() {
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('[data-timeline-bullet]').forEach(function(bullet, bulletOrder) {
+        this.toggleBullet(bullet, bulletOrder);
+      }.bind(this));
+    });
+  }
+
+  init() {
+    this.observe();
+  }
+}
+
 window.onload = function () {
   new FontSize();
 
@@ -278,4 +314,6 @@ window.onload = function () {
 
   timelineContainer.innerHTML = timelineTemplate(timeline);
   speakersContainer.innerHTML = speakerTemplate(speakersData);
+
+  new Timeline();
 };

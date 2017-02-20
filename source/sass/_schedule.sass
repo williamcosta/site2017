@@ -29,7 +29,7 @@
     //   max-width: 50%
     //   align-self: flex-end
 
-    &::before
+    &:before
       content: ''
       position: absolute
       top: 0
@@ -51,6 +51,10 @@
     &:not(:last-child)
       margin-bottom: ($margin * 2)
 
+    &.current:before
+      box-shadow: 0 0 0 7px $red, 0 3px 0 4px rgba(#000, .05)
+      background: $white
+
     &:before
       content: ''
       position: absolute
@@ -61,7 +65,7 @@
       transform: translateX(-25%)
       border-radius: 50%
       box-shadow: 0 0 0 7px #D8D8D8, 0 3px 0 4px rgba(#000, .05)
-      background: #6c6c6c
+      background: $gray
 
     @media screen and (min-width: $medium)
       &:nth-child(odd)
