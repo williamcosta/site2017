@@ -186,10 +186,7 @@ h6 {
 
 .heading-highlight {
   text-align: center;
-  margin-bottom: 1.5rem; }
-  @media screen and (min-width: 640px) {
-    .heading-highlight {
-      margin-bottom: 6rem; } }
+  margin-bottom: 6rem; }
 
 .heading-highlight {
   font-weight: 300;
@@ -840,3 +837,6 @@ a {
 .invert-color .colors-left i,
 .invert-color .colors-right i {
   background: #fff; }
+
+.invert-color .timeline-block.current::before {
+  box-shadow: 0 0 0 7px #fff, 0 3px 0 4px rgba(0, 0, 0, 0.05); }
