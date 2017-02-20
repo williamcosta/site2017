@@ -450,7 +450,6 @@ a {
   .info h2 {
     color: #000; }
   .info .container {
-    position: relative;
     z-index: 2; }
     .info .container > *:not(:last-child) {
       margin-bottom: 2rem; }
@@ -569,14 +568,6 @@ a {
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap; }
-    @media screen and (min-width: 640px) {
-      .schedule .schedule-timeline {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-                flex: 0 0 50%;
-        max-width: 50%;
-        -ms-flex-item-align: end;
-            align-self: flex-end; } }
     .schedule .schedule-timeline::before {
       content: '';
       position: absolute;
@@ -584,23 +575,63 @@ a {
       height: 100%;
       width: .5rem;
       background: #6C6C6C;
-      left: 4rem; }
+      left: 2rem; }
       @media screen and (min-width: 640px) {
         .schedule .schedule-timeline::before {
-          left: 0; } }
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
   .schedule .timeline-block {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
     position: relative;
-    padding-left: 6rem; }
+    padding-left: 5.5rem; }
     .schedule .timeline-block:not(:last-child) {
       margin-bottom: 4rem; }
+    .schedule .timeline-block.current::before {
+      box-shadow: 0 0 0 7px #ff685c, 0 3px 0 4px rgba(0, 0, 0, 0.05);
+      background: #fff;
+      -webkit-transition: box-shadow .5s ease-in;
+      transition: box-shadow .5s ease-in; }
+    .schedule .timeline-block::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      width: 1rem;
+      height: 1rem;
+      -webkit-transform: translateX(-25%);
+              transform: translateX(-25%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 7px #D8D8D8, 0 3px 0 4px rgba(0, 0, 0, 0.05);
+      background: #636363;
+      -webkit-transition: box-shadow .5s ease-in;
+      transition: box-shadow .5s ease-in;
+      will-change: box-shadow; }
+    @media screen and (min-width: 640px) {
+      .schedule .timeline-block:nth-child(odd) {
+        padding-left: 0;
+        padding-right: calc(50% + 4rem);
+        text-align: right; }
+        .schedule .timeline-block:nth-child(odd)::before {
+          left: initial;
+          right: 50%;
+          -webkit-transform: translateX(0.5rem);
+                  transform: translateX(0.5rem); }
+      .schedule .timeline-block:nth-child(even) {
+        padding-left: calc(50% + 4rem);
+        text-align: left; }
+        .schedule .timeline-block:nth-child(even)::before {
+          left: 50%;
+          -webkit-transform: translateX(-0.5rem);
+                  transform: translateX(-0.5rem); } }
   .schedule .timeline-circle {
+    display: none;
     position: absolute;
     top: 0;
-    left: 4rem;
+    left: 2rem;
     width: 1rem;
     height: 1rem;
     -webkit-transform: translateX(-25%);
@@ -650,13 +681,25 @@ a {
     width: 80%; }
 
 .local {
-  color: #fff;
-  background: url(../images/bg-local-mobile.jpg) no-repeat 0 0;
-  background-size: cover; }
-  @media screen and (min-width: 640px) {
-    .local {
-      background-image: url(../images/bg-local.png);
-      background-attachment: fixed; } }
+  position: relative;
+  color: #fff; }
+  .local:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-local-mobile.jpg) no-repeat 0 0;
+    background-size: cover;
+    opacity: .4; }
+    @media screen and (min-width: 640px) {
+      .local:before {
+        background-image: url(../images/bg-local.png);
+        background-attachment: fixed; } }
+  .local .container {
+    position: relative;
+    z-index: 2; }
   .local .local-info {
     text-align: center; }
   .local h3 {
@@ -680,7 +723,8 @@ a {
 
 .contact {
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 0; }
   .contact .container > *:not(h2):not(:last-child) {
     margin-bottom: 1.3rem; }
   .contact h4 {
@@ -707,8 +751,8 @@ a {
     padding: 0 1rem; }
   .contact .contact-links {
     border-top: 1px solid #636363;
-    padding-top: 2rem;
-    margin-top: 2rem; }
+    padding: 1.5rem 1rem;
+    margin-top: 6rem; }
     .contact .contact-links a {
       color: #636363; }
       .contact .contact-links a:hover, .contact .contact-links a:focus {
