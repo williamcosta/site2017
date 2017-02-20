@@ -147,7 +147,7 @@ const speakerTemplate = (speaker) => {
             <p>${ item.name }</p>
             <p>
               ${ item.role }
-              <a href="${ item.link }" target="_blank">${ item.label }</a>
+              <a href="${ item.link }" aria-label="Ir ao twitter de ${ item.name }" target="_blank">${ item.label }</a>
             </p>
           </figcaption>
         </figure>
@@ -177,8 +177,8 @@ const contextMenuListener = (menu) => {
 
 window.onload = function () {
   clickMenu();
-  // const timelineContainer = document.querySelector('[data-schedule]')
+  const timelineContainer = document.querySelector('[data-schedule]')
   const speakersContainer = document.querySelector('[data-speaker]')
-  // timelineContainer.innerHTML = timelineTemplate(timeline);
+  timelineContainer.innerHTML = timelineTemplate(timeline);
   speakersContainer.innerHTML = speakerTemplate(speakersData);
 };
