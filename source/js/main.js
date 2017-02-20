@@ -37,22 +37,22 @@ var speakersData = [
     photo: 'assets/images/bruno-genaro-frontinsampa.jpg'
   },
   {
-    name: 'Call4papers',
-    role: 'Seja um(a) palestrante do nosso evento',
+    name: 'A definir',
+    role: '',
     label: 'EM BREVE',
     link: '/',
     photo: 'assets/images/speaker.jpg'
   },
   {
-    name: 'Call4papers',
-    role: 'Seja um(a) palestrante do nosso evento',
+    name: 'A definir',
+    role: '',
     label: 'EM BREVE',
     link: '/',
     photo: 'assets/images/speaker.jpg'
   },
   {
-    name: 'Call4papers',
-    role: 'Seja um(a) palestrante do nosso evento',
+    name: 'A definir',
+    role: '',
     label: 'EM BREVE',
     link: '/',
     photo: 'assets/images/speaker.jpg'
@@ -61,60 +61,81 @@ var speakersData = [
 
 var timeline = [
   {
-    hour: '08:00 - 09:00',
+    hour: '08:00 - 09:30',
     title: 'Credenciamento',
     description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '9:00 - 10:00',
+    title: 'Apresentação Matheus Marsiglio',
+    description: '',
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '10:10 - 11:00',
+    title: 'Raphael Fabeni',
+    description: '',
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '11:10 - 12:00',
+    title: 'Fábio Vedoveli',
+    description: '',
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '12:00 - 13:30',
+    title: 'Almoço',
+    description: '',
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '13:40 - 14:00',
+    title: 'Patricia Silva',
+    description: '',
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '14:10 - 15:00',
+    title: 'Bruno Genaro',
+    description: '',
+    speaker: '',
+    link: ''
   },
   {
-    hour: '08:00 - 09:00',
-    title: 'Credenciamento',
-    description: 'Não esqueça seu RG',
-    speaker: 'John Doe',
-    link: 'http://www.teste.com'
+    hour: '15:10 - 16:00',
+    title: 'Bianca Brancaleone',
+    description: '',
+    speaker: '',
+    link: ''
+  },
+  {
+    hour: '16:10 - 16:40',
+    title: 'Coffee',
+    description: '',
+    speaker: '',
+    link: ''
+  },
+  {
+    hour: '16:40 - 18:30',
+    title: 'Em definição',
+    description: '',
+    speaker: '',
+    link: ''
+  },
+  {
+    hour: '18:40',
+    title: 'Encerramento',
+    description: '',
+    speaker: '',
+    link: ''
   }
 ]
 
@@ -128,7 +149,6 @@ const timelineTemplate = (timeline) => {
             <p>${ item.hour }</p>
             <p>${ item.description }</p>
             <p class="timeline-speaker">${ item.speaker }</p>
-            <p><a href="#">+ detalhes</a></p>
           </div>
         </div>
       `
