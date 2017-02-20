@@ -123,7 +123,6 @@ const timelineTemplate = (timeline) => {
     return (
       `
         <div class="timeline-block">
-          <div class="timeline-circle"></div>
           <div class="timeline-content">
             <h3 class="text-medium">${ item.title }</h3>
             <p>${ item.hour }</p>

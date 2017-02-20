@@ -24,10 +24,10 @@
     display: flex
     flex-flow: row wrap
 
-    @media screen and (min-width: $medium)
-      flex: 0 0 50%
-      max-width: 50%
-      align-self: flex-end
+    // @media screen and (min-width: $medium)
+    //   flex: 0 0 50%
+    //   max-width: 50%
+    //   align-self: flex-end
 
     &::before
       content: ''
@@ -36,19 +36,51 @@
       height: 100%
       width: .5rem
       background: #6C6C6C
-      left: ($gutter * 4)
+      left: ($gutter * 2)
 
       @media screen and (min-width: $medium)
-        left: 0
+        left: 50%
+        transform: translateX(-50%)
 
   .timeline-block
     flex: 0 0 100%
     max-width: 100%
     position: relative
-    padding-left: ($gutter * 6)
+    padding-left: ($gutter * 5.5)
 
     &:not(:last-child)
       margin-bottom: ($margin * 2)
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: ($gutter * 2)
+      width: 1rem
+      height: 1rem
+      transform: translateX(-25%)
+      border-radius: 50%
+      box-shadow: 0 0 0 7px #D8D8D8, 0 3px 0 4px rgba(#000, .05)
+      background: #6c6c6c
+
+    @media screen and (min-width: $medium)
+      &:nth-child(odd)
+        padding-left: 0
+        padding-right: calc(50% + #{$gutter * 4})
+        text-align: right
+
+        &:before
+          left: initial
+          right: 50%
+          transform: translateX(.5rem)
+
+      &:nth-child(even)
+        padding-left: calc(50% + #{$gutter * 4})
+        text-align: left
+
+        &:before
+          left: 50%
+          transform: translateX(-.5rem)
 
     // WHAT FUCK THIS CLEAR BOTH???
     // &:after
@@ -57,9 +89,10 @@
     //   display: table
 
   .timeline-circle
+    display: none
     position: absolute
     top: 0
-    left: ($gutter * 4)
+    left: ($gutter * 2)
     width: 1rem
     height: 1rem
     transform: translateX(-25%)
