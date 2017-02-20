@@ -16,11 +16,15 @@
 
   li
     margin: 0 $gutter
-    width: 150px
+    width: 90px
+
+    @media screen and (min-width: $medium)
+      width: 150px
 
   img
     display: block
     margin-bottom: 10px
+    max-width: 100%
 
   .text-info
     display: block
