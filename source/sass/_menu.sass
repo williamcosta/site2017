@@ -139,12 +139,13 @@
     background: rgba($white,.3)
     z-index: 1
 
-.btn-size
+
+.btn-size,
+.btn-invert
   background: none
   border: none
   position: absolute
   top: 30px
-  right: 5%
   display: none
   cursor: pointer
 
@@ -155,14 +156,8 @@
     height: 20px
     width: 30px
 
-.btn-invert
-  background: none
-  border: none
-  position: absolute
-  top: 30px
-  right: calc(5% - 50px)
-  cursor: pointer
+.btn-size
+  right: 5%
 
-  svg
-    height: 20px
-    width: 30px
+.btn-invert
+  right: calc(5% - 50px)
