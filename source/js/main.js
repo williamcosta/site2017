@@ -125,7 +125,7 @@ const timelineTemplate = (timeline) => {
         <div class="timeline-block">
           <div class="timeline-circle"></div>
           <div class="timeline-content">
-            <h3>${ item.title }</h3>
+            <h3 class="text-medium">${ item.title }</h3>
             <p>${ item.hour }</p>
             <p>${ item.description }</p>
             <p class="timeline-speaker">${ item.speaker }</p>
@@ -144,7 +144,7 @@ const speakerTemplate = (speaker) => {
         <figure class="speaker-item">
           <img src="${ item.photo }" alt="Palestrante ${ item.name }">
           <figcaption>
-            <p>${ item.name }</p>
+            <p class="text-large">${ item.name }</p>
             <p>
               ${ item.role }
               <a href="${ item.link }" aria-label="Ir ao twitter de ${ item.name }" target="_blank">${ item.label }</a>

@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $font
+
+.heading-highlight
+  text-align: center
+  margin-bottom: $heading-margin
+
+@each $name, $size in (highlight: 2.3em, large: 2.1em, medium: 1.8em, small: 1.6em)
+  .heading-#{$name}
+    font-weight: 300
+    font-size: #{$size}
+    line-height: 1.5
+
+@each $name, $size in (highlight: 1.4em, large: 1.2em, medium: 1em, small: .8em)
+  .text-#{$name}
+    font-size: $size
