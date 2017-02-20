@@ -16,7 +16,7 @@
   width: 100%
   top: 0
   left: 0
-  z-index: 2
+  z-index: 3
 
   ul
     display: flex
@@ -138,3 +138,26 @@
     transition: opacity .25s ease-in
     background: rgba($white,.3)
     z-index: 1
+
+
+.btn-size,
+.btn-invert
+  background: none
+  border: none
+  position: absolute
+  top: 30px
+  display: none
+  cursor: pointer
+
+  @media screen and (min-width: $medium)
+    display: block
+
+  svg
+    height: 20px
+    width: 30px
+
+.btn-size
+  right: 5%
+
+.btn-invert
+  right: calc(5% - 50px)
