@@ -68,24 +68,24 @@ var timeline = [
     link: ''
   },
   {
-    hour: '9:00 - 10:00',
-    title: 'Apresentação Matheus Marsiglio',
+    hour: '9:30 - 10:00',
+    title: 'Apresentação',
     description: '',
-    speaker: '',
+    speaker: 'Matheus Marsiglio',
     link: ''
   },
   {
     hour: '10:10 - 11:00',
-    title: 'Raphael Fabeni',
+    title: 'Aguardando Palestra',
     description: '',
-    speaker: '',
+    speaker: 'Raphael Fabeni',
     link: ''
   },
   {
     hour: '11:10 - 12:00',
-    title: 'Fábio Vedoveli',
+    title: 'Aguardando Palestra',
     description: '',
-    speaker: '',
+    speaker: 'Fábio Vedoveli',
     link: ''
   },
   {
@@ -97,28 +97,28 @@ var timeline = [
   },
   {
     hour: '13:40 - 14:00',
-    title: 'Patricia Silva',
+    title: 'Aguardando Palestra',
     description: '',
-    speaker: '',
+    speaker: 'Patricia Silva',
     link: ''
   },
   {
     hour: '14:10 - 15:00',
-    title: 'Bruno Genaro',
-    description: '',
-    speaker: '',
+    title: 'Renderizando componentes React no servidor',
+    description: 'O ReactJS tem a poderosa habilidade de renderizar seus componentes no servidor. Nesta apresentação Bruno irá mostrar os benefícios e também como e quando podemos explorar esta prática.',
+    speaker: 'Bruno Genaro',
     link: ''
   },
   {
     hour: '15:10 - 16:00',
-    title: 'Bianca Brancaleone',
+    title: 'Aguardando Palestra',
     description: '',
-    speaker: '',
+    speaker: 'Bianca Brancaleone',
     link: ''
   },
   {
     hour: '16:10 - 16:40',
-    title: 'Coffee',
+    title: 'Coffee Break',
     description: '',
     speaker: '',
     link: ''
@@ -134,6 +134,13 @@ var timeline = [
     hour: '18:40',
     title: 'Encerramento',
     description: '',
+    speaker: '',
+    link: ''
+  },
+  {
+    hour: '19:00',
+    title: '?????',
+    description: 'Aguarde!',
     speaker: '',
     link: ''
   }
