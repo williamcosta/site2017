@@ -11,14 +11,16 @@
 
 .staff-list
   display: flex
+  flex-wrap: wrap
   justify-content: center
   margin: $margin 0
 
   li
-    margin: 0 $gutter
-    width: 90px
+    margin: 0 $gutter $gutter
+    width: 100px
 
     @media screen and (min-width: $medium)
+      margin: 0 $gutter
       width: 150px
 
   img
