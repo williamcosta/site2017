@@ -39,21 +39,21 @@ var speakersData = [
   {
     name: 'A definir',
     role: '',
-    label: 'EM BREVE',
+    label: '',
     link: '/',
     photo: 'assets/images/speaker.jpg'
   },
   {
     name: 'A definir',
     role: '',
-    label: 'EM BREVE',
+    label: '',
     link: '/',
     photo: 'assets/images/speaker.jpg'
   },
   {
     name: 'A definir',
     role: '',
-    label: 'EM BREVE',
+    label: '',
     link: '/',
     photo: 'assets/images/speaker.jpg'
   }
