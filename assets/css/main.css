@@ -848,3 +848,6 @@ a {
 
 .invert-color .timeline-block.current::before {
   box-shadow: 0 0 0 7px #fff, 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+
+.invert-color .timeline-speaker {
+  color: #fff; }
