@@ -678,6 +678,8 @@ a {
       display: block;
       margin-top: 1rem;
       color: #fff; }
+  .schedule .timeline-speaker {
+    color: #32c6ef; }
   .schedule .details,
   .schedule .call4paper {
     position: absolute;
