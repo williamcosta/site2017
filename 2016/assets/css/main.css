@@ -1,0 +1,736 @@
+.layout-grid, .layout-grid_col, .layout-grid_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .layout-grid_col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .layout-grid_row {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
+.layout-align_center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.layout-margin_remove {
+  margin: 0; }
+  .layout-margin_remove-bottom {
+    margin-bottom: 0; }
+
+.layout-size, .layout-size_eighty {
+  width: 100%;
+  margin: 0 auto; }
+  .layout-size_eighty {
+    width: 80%; }
+
+.text-title, .text-title + .text-title, .text-title_medium, .schedule-title {
+  font: 2.55rem/1.2em "Oswald";
+  text-transform: uppercase;
+  color: inherit;
+  display: block;
+  width: 100%; }
+  .is-show .text-title, .is-show .text-title_medium, .is-show .schedule-title {
+    display: none; }
+  @media only screen and (max-width: 768px) {
+    .text-title, .text-title + .text-title, .text-title_medium, .schedule-title {
+      font: 2rem/1.2em "Oswald";
+      margin-bottom: 10px; } }
+  .text-title_medium + .text-title, .schedule-title + .text-title, .text-title + .text-title, .text-title + .text-title + .text-title, .text-title + .text-title_medium, .text-title + .text-title + .text-title_medium, .text-title_medium + .text-title_medium, .schedule-title + .text-title_medium, .text-title + .schedule-title, .text-title + .text-title + .schedule-title, .text-title_medium + .schedule-title, .schedule-title + .schedule-title, .text-title_medium, .schedule-title {
+    font-size: 1.45rem;
+    opacity: .6; }
+    .text-title + .text-title_medium + .text-title, .text-title + .text-title + .text-title_medium + .text-title, .text-title_medium + .text-title_medium + .text-title, .schedule-title + .text-title_medium + .text-title, .text-title + .schedule-title + .text-title, .text-title + .text-title + .schedule-title + .text-title, .text-title_medium + .schedule-title + .text-title, .schedule-title + .schedule-title + .text-title, .text-title_medium + .text-title + .text-title, .schedule-title + .text-title + .text-title, .text-title + .text-title + .text-title, .text-title + .text-title + .text-title + .text-title, .text-title_medium + .text-title + .text-title_medium, .schedule-title + .text-title + .text-title_medium, .text-title + .text-title + .text-title_medium, .text-title + .text-title + .text-title + .text-title_medium, .text-title + .text-title_medium + .text-title_medium, .text-title + .text-title + .text-title_medium + .text-title_medium, .text-title_medium + .text-title_medium + .text-title_medium, .schedule-title + .text-title_medium + .text-title_medium, .text-title + .schedule-title + .text-title_medium, .text-title + .text-title + .schedule-title + .text-title_medium, .text-title_medium + .schedule-title + .text-title_medium, .schedule-title + .schedule-title + .text-title_medium, .text-title_medium + .text-title + .schedule-title, .schedule-title + .text-title + .schedule-title, .text-title + .text-title + .schedule-title, .text-title + .text-title + .text-title + .schedule-title, .text-title + .text-title_medium + .schedule-title, .text-title + .text-title + .text-title_medium + .schedule-title, .text-title_medium + .text-title_medium + .schedule-title, .schedule-title + .text-title_medium + .schedule-title, .text-title + .schedule-title + .schedule-title, .text-title + .text-title + .schedule-title + .schedule-title, .text-title_medium + .schedule-title + .schedule-title, .schedule-title + .schedule-title + .schedule-title, .text-title_small, .text-title_medium + .text-title, .schedule-title + .text-title, .text-title.text-title_medium + .text-title, .text-title.schedule-title + .text-title, .text-title_medium + .text-title_medium, .schedule-title + .text-title_medium, .text-title_medium + .schedule-title, .schedule-title + .schedule-title {
+      font: .9rem/1.2rem "Open Sans";
+      text-transform: none;
+      margin: 10px 0;
+      opacity: .4; }
+  .content .text-title, .content .text-title_medium, .content .schedule-title {
+    display: block; }
+    .content .text-title_medium + .text-title, .content .schedule-title + .text-title, .content .text-title + .text-title, .content .text-title + .text-title + .text-title, .content .text-title + .text-title_medium, .content .text-title + .text-title + .text-title_medium, .content .text-title_medium + .text-title_medium, .content .schedule-title + .text-title_medium, .content .text-title + .schedule-title, .content .text-title + .text-title + .schedule-title, .content .text-title_medium + .schedule-title, .content .schedule-title + .schedule-title {
+      border: 0;
+      display: block; }
+      .content .text-title_medium + .text-title + p, .content .schedule-title + .text-title + p, .content .text-title + .text-title + p, .content .text-title + .text-title + .text-title + p, .content .text-title + .text-title_medium + p, .content .text-title + .text-title + .text-title_medium + p, .content .text-title_medium + .text-title_medium + p, .content .schedule-title + .text-title_medium + p, .content .text-title + .schedule-title + p, .content .text-title + .text-title + .schedule-title + p, .content .text-title_medium + .schedule-title + p, .content .schedule-title + .schedule-title + p {
+        margin-top: 20px; }
+  .content .text-title_medium, .content .schedule-title, .content .text-title_small {
+    border: 0;
+    display: block; }
+  .speaker-list .text-title, .speaker-list .text-title_medium, .speaker-list .schedule-title {
+    font-size: 1.8rem;
+    border: 0;
+    margin: 0; }
+    .speaker-list .text-title_medium + .text-title, .speaker-list .schedule-title + .text-title, .speaker-list .text-title + .text-title, .speaker-list .text-title + .text-title + .text-title, .speaker-list .text-title + .text-title_medium, .speaker-list .text-title + .text-title + .text-title_medium, .speaker-list .text-title_medium + .text-title_medium, .speaker-list .schedule-title + .text-title_medium, .speaker-list .text-title + .schedule-title, .speaker-list .text-title + .text-title + .schedule-title, .speaker-list .text-title_medium + .schedule-title, .speaker-list .schedule-title + .schedule-title {
+      font-size: 1.1rem; }
+  .admin-list .text-title, .admin-list .text-title_medium, .admin-list .schedule-title {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 0; }
+    .admin-list .text-title_medium + .text-title, .admin-list .schedule-title + .text-title, .admin-list .text-title + .text-title, .admin-list .text-title + .text-title + .text-title, .admin-list .text-title + .text-title_medium, .admin-list .text-title + .text-title + .text-title_medium, .admin-list .text-title_medium + .text-title_medium, .admin-list .schedule-title + .text-title_medium, .admin-list .text-title + .schedule-title, .admin-list .text-title + .text-title + .schedule-title, .admin-list .text-title_medium + .schedule-title, .admin-list .schedule-title + .schedule-title {
+      font: 0.9rem "Open Sans";
+      text-transform: none;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .admin-list .text-title_medium + .text-title *, .admin-list .schedule-title + .text-title *, .admin-list .text-title + .text-title *, .admin-list .text-title + .text-title + .text-title *, .admin-list .text-title + .text-title_medium *, .admin-list .text-title + .text-title + .text-title_medium *, .admin-list .text-title_medium + .text-title_medium *, .admin-list .schedule-title + .text-title_medium *, .admin-list .text-title + .schedule-title *, .admin-list .text-title + .text-title + .schedule-title *, .admin-list .text-title_medium + .schedule-title *, .admin-list .schedule-title + .schedule-title * {
+        margin: 0 5px; }
+
+.text-align_center {
+  text-align: center; }
+
+body, .content {
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  background: transparent; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Open Sans";
+  overflow: hidden; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+body.is-normal {
+  overflow: auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-bottom: 20px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c2c2b; }
+
+@media screen and (max-width: 768px) {
+  video {
+    display: none; } }
+
+@media screen and (min-width: 769px) {
+  video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; } }
+
+.title {
+  font-size: 36px;
+  font-family: Oswald;
+  text-transform: uppercase; }
+
+.subtitle {
+  font-size: 24px; }
+  @media only screen and (max-width: 401px) {
+    .subtitle {
+      font-size: 18px; } }
+  .pre-footer .subtitle {
+    color: #2c2c2b;
+    font-size: 18px; }
+
+/**
+ * AREAS
+ */
+@-webkit-keyframes transparency {
+  to {
+    opacity: .1; } }
+@keyframes transparency {
+  to {
+    opacity: .1; } }
+
+@-webkit-keyframes color {
+  to {
+    color: #fff; } }
+
+@keyframes color {
+  to {
+    color: #fff; } }
+
+.area {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 33.33333%;
+  height: 50vh;
+  z-index: 2;
+  color: #fff; }
+  #event:not(.is-show) .text-title_medium + .text-title, #event:not(.is-show) .schedule-title + .text-title, #event:not(.is-show) .text-title + .text-title, #event:not(.is-show) .text-title + .text-title + .text-title, #event:not(.is-show) .text-title + .text-title_medium, #event:not(.is-show) .text-title + .text-title + .text-title_medium, #event:not(.is-show) .text-title_medium + .text-title_medium, #event:not(.is-show) .schedule-title + .text-title_medium, #event:not(.is-show) .text-title + .schedule-title, #event:not(.is-show) .text-title + .text-title + .schedule-title, #event:not(.is-show) .text-title_medium + .schedule-title, #event:not(.is-show) .schedule-title + .schedule-title {
+    font-size: 1.29em; }
+    @media only screen and (max-width: 401px) {
+      #event:not(.is-show) .text-title_medium + .text-title, #event:not(.is-show) .schedule-title + .text-title, #event:not(.is-show) .text-title + .text-title, #event:not(.is-show) .text-title + .text-title + .text-title, #event:not(.is-show) .text-title + .text-title_medium, #event:not(.is-show) .text-title + .text-title + .text-title_medium, #event:not(.is-show) .text-title_medium + .text-title_medium, #event:not(.is-show) .schedule-title + .text-title_medium, #event:not(.is-show) .text-title + .schedule-title, #event:not(.is-show) .text-title + .text-title + .schedule-title, #event:not(.is-show) .text-title_medium + .schedule-title, #event:not(.is-show) .schedule-title + .schedule-title {
+        font-size: .8em; } }
+  #event:not(.is-show):before {
+    background: url(/assets/images/area-front-in-sampa.jpg) no-repeat; }
+  #ticket .text-title_medium + .text-title, #ticket .schedule-title + .text-title, #ticket .text-title + .text-title, #ticket .text-title + .text-title + .text-title, #ticket .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title_medium, #ticket .text-title_medium + .text-title_medium, #ticket .schedule-title + .text-title_medium, #ticket .text-title + .schedule-title, #ticket .text-title + .text-title + .schedule-title, #ticket .text-title_medium + .schedule-title, #ticket .schedule-title + .schedule-title {
+    font-size: 1.16em; }
+    #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title_medium + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title_medium + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title_medium + .text-title, #ticket .text-title + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .schedule-title + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .schedule-title + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .schedule-title + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .schedule-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title.text-title_medium + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title.schedule-title + .text-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title_medium, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title_medium, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .schedule-title + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .schedule-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title_medium + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title_medium + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .schedule-title + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title_medium:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .schedule-title + .text-title_medium, #ticket .schedule-title + .text-title_medium:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .schedule-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title_medium + .schedule-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .schedule-title + .schedule-title:not(.is-animation) .schedule-title + .text-title_medium, #ticket .text-title + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .schedule-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .schedule-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .schedule-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title + .text-title + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title_medium + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .schedule-title + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title_medium:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .text-title_medium + .schedule-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .schedule-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .text-title_medium + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title_medium + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .schedule-title + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .text-title + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title.text-title_medium + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title.schedule-title + .text-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .text-title_medium:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .text-title + .text-title_medium:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title_medium + .text-title_medium:not(.is-animation) .schedule-title + .schedule-title, #ticket .schedule-title + .text-title_medium:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .schedule-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title + .text-title + .schedule-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .text-title_medium + .schedule-title:not(.is-animation) .schedule-title + .schedule-title, #ticket .schedule-title + .schedule-title:not(.is-animation) .schedule-title + .schedule-title {
+      color: #df0a15; }
+  #place .text-title, #place .text-title_medium, #place .schedule-title {
+    margin-bottom: 8px; }
+    #place .text-title_medium + .text-title, #place .schedule-title + .text-title, #place .text-title + .text-title, #place .text-title + .text-title + .text-title, #place .text-title + .text-title_medium, #place .text-title + .text-title + .text-title_medium, #place .text-title_medium + .text-title_medium, #place .schedule-title + .text-title_medium, #place .text-title + .schedule-title, #place .text-title + .text-title + .schedule-title, #place .text-title_medium + .schedule-title, #place .schedule-title + .schedule-title {
+      font-size: .98em; }
+      #place .text-title + .text-title_medium + .text-title, #place .text-title + .text-title + .text-title_medium + .text-title, #place .text-title_medium + .text-title_medium + .text-title, #place .schedule-title + .text-title_medium + .text-title, #place .text-title + .schedule-title + .text-title, #place .text-title + .text-title + .schedule-title + .text-title, #place .text-title_medium + .schedule-title + .text-title, #place .schedule-title + .schedule-title + .text-title, #place .text-title_medium + .text-title + .text-title, #place .schedule-title + .text-title + .text-title, #place .text-title + .text-title + .text-title, #place .text-title + .text-title + .text-title + .text-title, #place .text-title_medium + .text-title + .text-title_medium, #place .schedule-title + .text-title + .text-title_medium, #place .text-title + .text-title + .text-title_medium, #place .text-title + .text-title + .text-title + .text-title_medium, #place .text-title + .text-title_medium + .text-title_medium, #place .text-title + .text-title + .text-title_medium + .text-title_medium, #place .text-title_medium + .text-title_medium + .text-title_medium, #place .schedule-title + .text-title_medium + .text-title_medium, #place .text-title + .schedule-title + .text-title_medium, #place .text-title + .text-title + .schedule-title + .text-title_medium, #place .text-title_medium + .schedule-title + .text-title_medium, #place .schedule-title + .schedule-title + .text-title_medium, #place .text-title_medium + .text-title + .schedule-title, #place .schedule-title + .text-title + .schedule-title, #place .text-title + .text-title + .schedule-title, #place .text-title + .text-title + .text-title + .schedule-title, #place .text-title + .text-title_medium + .schedule-title, #place .text-title + .text-title + .text-title_medium + .schedule-title, #place .text-title_medium + .text-title_medium + .schedule-title, #place .schedule-title + .text-title_medium + .schedule-title, #place .text-title + .schedule-title + .schedule-title, #place .text-title + .text-title + .schedule-title + .schedule-title, #place .text-title_medium + .schedule-title + .schedule-title, #place .schedule-title + .schedule-title + .schedule-title {
+        font-size: .65em;
+        text-transform: uppercase; }
+  @media only screen and (max-width: 768px) {
+    .area {
+      height: 33.33333vh;
+      width: 50%; } }
+  @media only screen and (max-width: 401px) {
+    .area {
+      width: 100vw; }
+      .area:nth-child(1) .content-group,
+      .area:nth-child(2) .content-group,
+      .area:nth-child(3) .content-group,
+      .area:nth-child(4) .content-group,
+      .area:nth-child(5) .content-group,
+      .area:nth-child(6) .content-group {
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%; } }
+  @media screen and (min-width: 769px) {
+    .area:not(.is-show):before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: .2;
+      z-index: 3;
+      -webkit-transition: opacity .5s ease;
+      transition: opacity .5s ease;
+      background: url(http://s3.amazonaws.com/agile_designer_uploads/images/145/large.jpg?1374128699) no-repeat;
+      background-size: cover; } }
+  .area:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 2; }
+  .area:nth-child(odd) {
+    color: #fff; }
+    .area:nth-child(odd):after {
+      background-color: #2c2c2b; }
+  .area:nth-child(even) {
+    color: #2c2c2b; }
+    .area:nth-child(even):after {
+      background-color: #fff; }
+  .area.is-show {
+    position: initial;
+    overflow: initial;
+    z-index: 3; }
+    .area.is-show .btn-area {
+      display: none; }
+  @media screen and (min-width: 769px) {
+    .area.is-animation {
+      -webkit-animation: color .4s linear .1s;
+              animation: color .4s linear .1s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+      .area.is-animation:after {
+        -webkit-animation: transparency .5s linear .1s;
+                animation: transparency .5s linear .1s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .area.is-animation:before {
+        opacity: 0; }
+    .area.is-first-animation {
+      -webkit-animation: color .9s linear .1s;
+              animation: color .9s linear .1s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+      .area.is-first-animation:before {
+        opacity: 0; }
+      .area.is-first-animation:nth-child(1):after {
+        -webkit-animation: transparency 1s linear .2s;
+                animation: transparency 1s linear .2s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .area.is-first-animation:nth-child(2):after {
+        -webkit-animation: transparency 1s linear .6s;
+                animation: transparency 1s linear .6s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .area.is-first-animation:nth-child(3):after {
+        -webkit-animation: transparency 1s linear .3s;
+                animation: transparency 1s linear .3s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .area.is-first-animation:nth-child(4):after {
+        -webkit-animation: transparency 1s linear .14s;
+                animation: transparency 1s linear .14s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .area.is-first-animation:nth-child(5):after {
+        -webkit-animation: transparency 1s linear .19s;
+                animation: transparency 1s linear .19s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .area.is-first-animation:nth-child(6):after {
+        -webkit-animation: transparency 1s linear .12s;
+                animation: transparency 1s linear .12s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; } }
+  .area:nth-child(1) .content-group {
+    -webkit-transform-origin: 100% 300%;
+            transform-origin: 100% 300%; }
+  .area:nth-child(2) .content-group {
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; }
+  .area:nth-child(3) .content-group {
+    -webkit-transform-origin: 100% 300%;
+            transform-origin: 100% 300%; }
+  .area:nth-child(4) .content-group {
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%; }
+  .area:nth-child(5) .content-group {
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%; }
+  .area:nth-child(6) .content-group {
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  @media only screen and (max-width: 768px) {
+    .area:nth-child(2) .content-group {
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0; }
+    .area:nth-child(3) .content-group {
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%; }
+    .area:nth-child(4) .content-group {
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%; }
+    .area:nth-child(5) .content-group {
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%; } }
+  .area.is-show .content-group {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 100%;
+    opacity: 1; }
+
+.area-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .area-container:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url(../images/area-container-overlay.png) repeat;
+    z-index: 2; }
+
+.area-group {
+  width: 100%;
+  font-size: 20px;
+  height: 100vh; }
+  @media only screen and (max-width: 401px) {
+    .area-group {
+      height: auto; } }
+
+.area-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease; }
+
+.area-content {
+  text-align: center;
+  position: relative;
+  z-index: 3; }
+
+.area-icon {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  z-index: 4; }
+
+.btn-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; }
+  .btn-area:focus {
+    outline: 3px solid red;
+    outline-offset: -3px; }
+    .btn-area:focus:active {
+      outline: none; }
+
+.content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 40px 20px 20px;
+  display: block; }
+  .content p {
+    font-size: 1rem; }
+  .content .note {
+    color: red;
+    text-align: center;
+    width: 100%; }
+  @media only screen and (max-width: 401px) {
+    .content {
+      padding: 10px 35px 10px 10px; } }
+  .area:nth-child(odd) .content {
+    color: #fff; }
+  .area:nth-child(even) .content {
+    color: #2c2c2b; }
+
+.btn-close {
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  right: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  z-index: 11;
+  display: none;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%); }
+  .is-show .btn-close {
+    display: block; }
+
+.content-group {
+  background-size: 100%;
+  background-attachment: fixed;
+  cursor: default;
+  height: 150%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  -webkit-transform: scale(0.33333);
+          transform: scale(0.33333); }
+  @media only screen and (max-width: 768px) {
+    .content-group {
+      height: 33.33333vh;
+      width: 50%; } }
+  .is-show .content-group {
+    height: 100vh;
+    opacity: 1;
+    z-index: 10;
+    width: 100%;
+    visibility: visible;
+    -webkit-transition: all ease .4s;
+    transition: all ease .4s; }
+    @media only screen and (max-width: 768px) {
+      .is-show .content-group {
+        width: 100%;
+        height: 100%; } }
+
+.content-side {
+  margin-bottom: 30px; }
+  .content-side:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50vw;
+    text-align: right; }
+  .content-side:nth-child(even) {
+    padding-left: 50vw;
+    padding-right: 0;
+    text-align: left; }
+
+/**
+ * OTHERS
+ */
+.extra {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .7em;
+  color: #acacaa;
+  padding: 10px;
+  background: #2c2c2b; }
+  .extra * {
+    width: 100%; }
+  .extra p:last-child {
+    margin: 0; }
+
+.social-chain:not(a) {
+  margin: 10px; }
+  @media only screen and (max-width: 768px) {
+    .social-chain:not(a) {
+      width: 100%;
+      text-align: center; } }
+
+.social-group {
+  padding: 30px 10px; }
+
+.btn-light {
+  background: #fff;
+  color: #2c2c2b;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 401px) {
+    .btn-light {
+      display: block;
+      text-align: center; } }
+
+.is-show .text-hide {
+  display: none; }
+
+.speaker-list {
+  height: 100%;
+  cursor: default;
+  margin: 0;
+  width: 100%; }
+  .speaker-list li {
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media screen and (min-width: 769px) {
+      .speaker-list li {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .speaker-list li:not(:last-child) {
+      border-bottom: 1px solid #464644;
+      padding-bottom: 20px; }
+
+.speaker-photo {
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px; }
+  @media screen and (min-width: 769px) {
+    .speaker-photo {
+      height: 200px;
+      width: 200px;
+      margin: 0 20px 0 0; } }
+
+.speaker-details {
+  width: calc(100% - 250px); }
+  @media only screen and (max-width: 768px) {
+    .speaker-details {
+      width: 100%; } }
+  .speaker-details p:last-child {
+    margin-bottom: 0; }
+
+.speaker-name {
+  color: #000;
+  font-family: Oswald;
+  font-size: 28px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 10px; }
+
+.speaker-link {
+  display: inline-block; }
+
+.speaker-slider {
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  text-transform: lowercase;
+  color: #df0a15;
+  margin-bottom: 20px; }
+  .speaker-slider:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 60%;
+    height: 3px;
+    background: #df0a15;
+    -webkit-transition: width .2s ease;
+    transition: width .2s ease; }
+    @media screen and (max-width: 768px) {
+      .speaker-slider:after {
+        left: 0; } }
+  .speaker-slider:hover:after, .speaker-slider:focus:after {
+    width: 100%; }
+  @media screen and (min-width: 769px) {
+    .schedule:nth-child(odd) .speaker-slider:after {
+      left: 0; } }
+  @media screen and (min-width: 769px) {
+    .schedule:nth-child(even) .speaker-slider:after {
+      right: 0; } }
+
+.contact {
+  display: inline-block;
+  margin: 25px 0 50px; }
+  @media only screen and (max-width: 401px) {
+    .contact {
+      font-size: 20px;
+      margin: 0 0 15px; } }
+
+.social-links a {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px; }
+
+.pre-footer,
+.extra {
+  display: none; }
+  .is-normal .pre-footer, .is-normal
+  .extra {
+    display: block; }
+
+.admin-list {
+  width: 100%;
+  text-align: center; }
+  .admin-list li {
+    display: inline-block; }
+
+@media screen and (min-width: 769px) {
+  .schedule {
+    width: 49%; }
+    .schedule:nth-child(even) {
+      text-align: right; }
+      .schedule:nth-child(even) .speaker-photo {
+        margin-right: 0; }
+    .schedule:nth-child(odd) {
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end; } }
+
+.schedule-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+
+.schedule-time {
+  margin: 0;
+  font-size: 1rem; }
+
+.schedule-title {
+  opacity: .8; }
+
+.fsp-social {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .fsp-social:not(:first-child) {
+    margin-right: 5px; }
+
+.remove-margin-bottom {
+  margin-bottom: 0; }
