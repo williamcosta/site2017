@@ -548,10 +548,10 @@ a {
 .schedule {
   color: #fff;
   position: relative;
-  padding-bottom: 9em; }
+  padding-bottom: 10em; }
   @media screen and (min-width: 640px) {
     .schedule {
-      padding-bottom: 6rem; } }
+      padding-bottom: 8rem; } }
   .schedule .container {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -671,14 +671,18 @@ a {
       display: block;
       margin-top: 1rem;
       color: #fff; }
-  .schedule .details {
+  .schedule .details,
+  .schedule .call4paper {
     position: absolute;
-    bottom: 30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     text-align: center;
     width: 80%; }
+  .schedule .details {
+    bottom: 70px; }
+  .schedule .call4paper {
+    bottom: 30px; }
 
 .local {
   position: relative;
@@ -720,6 +724,34 @@ a {
   text-align: center; }
   .sponsors h3 {
     margin-bottom: 1.5rem; }
+
+.sponsor-item {
+  margin-bottom: 4rem;
+  display: inline-block; }
+
+.staff-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0; }
+  .staff-list li {
+    margin: 0 1rem;
+    width: 90px; }
+    @media screen and (min-width: 640px) {
+      .staff-list li {
+        width: 150px; } }
+  .staff-list img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%; }
+  .staff-list .text-info {
+    display: block;
+    margin-bottom: 5px; }
+  .staff-list a {
+    color: #000; }
 
 .contact {
   color: #fff;
@@ -801,3 +833,6 @@ a {
 .invert-color .colors-left i,
 .invert-color .colors-right i {
   background: #fff; }
+
+.invert-color .timeline-block.current::before {
+  box-shadow: 0 0 0 7px #fff, 0 3px 0 4px rgba(0, 0, 0, 0.05); }
