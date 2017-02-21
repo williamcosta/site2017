@@ -95,11 +95,19 @@ gulp.task('reset', function() {
   return require('del')('./build');
 });
 
+gulp.task('backup2012', gulp.series(
+  function() {
+    return gulp.src('./source/2012/**/*')
+      .pipe(gulp.dest('./build/2012'));
+  }
+));
+
 gulp.task('default', gulp.series(
   'reset',
   'index',
   'images',
   'cname',
+  'backup2012',
   function() {
     browserSync({
       server: {
