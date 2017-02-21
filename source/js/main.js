@@ -97,8 +97,8 @@ var timeline = [
   },
   {
     hour: '13:40 - 14:00',
-    title: 'Aguardando Palestra',
-    description: '',
+    title: 'Síndrome do impostor, um mal que nunca sai de moda',
+    description: 'Você já teve a sensação que não é bom o suficiente para fazer o seu trabalho? Você já fingiu entender algo, mesmo sem entender nada? Você já teve medo de alguém descobrir que você é uma fraude? Que o código ou trabalho dos seus amigos é mais rápido ou melhor? Que você programa orientado ao Google? Então, talvez seja a hora de você entender melhor do que isso se trata e como vencer esse sentimento.',
     speaker: 'Patricia Silva',
     link: ''
   },
