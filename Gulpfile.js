@@ -102,12 +102,44 @@ gulp.task('backup2012', gulp.series(
   }
 ));
 
+gulp.task('backup2013', gulp.series(
+  function() {
+    return gulp.src('./source/2013/**/*')
+      .pipe(gulp.dest('./build/2013'));
+  }
+));
+
+gulp.task('backup2014', gulp.series(
+  function() {
+    return gulp.src('./source/2014/**/*')
+      .pipe(gulp.dest('./build/2014'));
+  }
+));
+
+gulp.task('backup2015', gulp.series(
+  function() {
+    return gulp.src('./source/2015/**/*')
+      .pipe(gulp.dest('./build/2015'));
+  }
+));
+
+gulp.task('backup2016', gulp.series(
+  function() {
+    return gulp.src('./source/2016/**/*')
+      .pipe(gulp.dest('./build/2016'));
+  }
+));
+
 gulp.task('default', gulp.series(
   'reset',
   'index',
   'images',
   'cname',
   'backup2012',
+  'backup2013',
+  'backup2014',
+  'backup2015',
+  'backup2016',
   function() {
     browserSync({
       server: {
