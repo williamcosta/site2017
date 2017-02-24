@@ -111,8 +111,8 @@ var timeline = [
   },
   {
     hour: '15:10 - 16:00',
-    title: 'Aguardando Palestra',
-    description: '',
+    title: ' UX: quem são, o que fazem, onde vivem?',
+    description: 'Fazer UX" está virando pré-requisito para desenvolver qualquer produto digital, mas o que está por trás disso? O que o mercado espera que a gente faça, como os chefes vendem o que a gente faz, o que os devs acham que a gente faz e o que a gente realmente faz (ou deveria fazer).',
     speaker: 'Bianca Brancaleone',
     link: ''
   },
