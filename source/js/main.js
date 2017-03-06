@@ -83,8 +83,8 @@ var timeline = [
   },
   {
     hour: '11:10 - 12:00',
-    title: 'Aguardando Palestra',
-    description: '',
+    title: 'Vue.js, Vuex, Single Source of Truth e aplicações reais',
+    description: 'O segredo para Single Page Applications bem sucedidas: o controle total sobre a informação carregada em memória. Esta palestra falará sobre gerenciamento centralizado do estado da aplicação.',
     speaker: 'Fábio Vedoveli',
     link: ''
   },
@@ -125,8 +125,8 @@ var timeline = [
   },
   {
     hour: '16:40 - 17:10',
-    title: 'Introdução a Elm - programação funcional no front-end',
-    description: '',
+    title: 'Webapps confiáveis com Elm',
+    description: 'Interfaces de usuário podem ser simples e confiáveis utilizando a ferramenta correta. Elm ajuda a impedir erros de execução e torna o processo de desenvolvimento mais simples. A simplicidade do Elm o ajuda a criar webapps à prova de balas e torna seu processo de desenvolvimento muito mais divertido.',
     speaker: 'Hugo Bessa',
     link: ''
   },
