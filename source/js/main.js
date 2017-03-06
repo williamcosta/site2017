@@ -37,11 +37,11 @@ var speakersData = [
     photo: 'assets/images/bruno-genaro-frontinsampa.jpg'
   },
   {
-    name: 'A definir',
-    role: '',
-    label: '',
-    link: '/',
-    photo: 'assets/images/speaker.jpg'
+    name: 'Hugo Bessa',
+    role: 'Desenvolvedor front-end com foco em simplicidade.',
+    label: '@hugoBessaa',
+    link: 'http://twitter.com/hugoBessaa',
+    photo: 'assets/images/hugo-bessa-frontinsampa.jpg'
   },
   {
     name: 'A definir',
@@ -124,8 +124,15 @@ var timeline = [
     link: ''
   },
   {
-    hour: '16:40 - 18:30',
-    title: 'Em definição',
+    hour: '16:40 - 17:10',
+    title: 'Introdução a Elm - programação funcional no front-end',
+    description: '',
+    speaker: 'Hugo Bessa',
+    link: ''
+  },
+  {
+    hour: '17:10 - 18:30',
+    title: 'Aguardando Definição',
     description: '',
     speaker: '',
     link: ''
