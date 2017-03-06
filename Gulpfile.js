@@ -130,6 +130,13 @@ gulp.task('backup2016', gulp.series(
   }
 ));
 
+gulp.task('midia', gulp.series(
+  function() {
+    return gulp.src('./source/midia/**/*')
+      .pipe(gulp.dest('./build/midia'));
+  }
+));
+
 gulp.task('default', gulp.series(
   'reset',
   'index',
@@ -140,6 +147,7 @@ gulp.task('default', gulp.series(
   'backup2014',
   'backup2015',
   'backup2016',
+  'midia',
   function() {
     browserSync({
       server: {
