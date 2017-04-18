@@ -17,7 +17,7 @@ var speakersData = [
   },
   {
     name: 'Raphael Fabeni',
-    role: 'Desenvolvedor na RedVentures e criador/organizador do #MeetupCSS SP',
+    role: 'Desenvolvedor na RedVentures',
     label: '@raphaelfabeni',
     link: 'http://twitter.com/raphaelfabeni',
     photo: 'assets/images/raphael-fabeni-frontinsampa.jpg'
