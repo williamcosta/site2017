@@ -84,7 +84,7 @@ var timeline = [
   {
     hour: '9:30 - 10:10',
     title: 'CSS Tips',
-    description: '',
+    description: 'Muitos de nós já perdemos a paciência com CSS pelo menos uma vez na vida. No entanto, já também demos aquele suspiro de alívio quando conseguimos resolver um determinado problema ou bug. Fácil de aprender e difícil de dominar, o CSS é uma linguagem de fácil acesso e que esconde diversos segredos. Nessa talk, iremos abordar algumas dicas de alguém que já perdeu a paciência algumas vezes com CSS mas que ainda o ama. Sem ressentimentos.',
     speaker: 'Raphael Fabeni',
     link: ''
   },
