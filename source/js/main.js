@@ -31,7 +31,7 @@ var speakersData = [
   },
   {
     name: 'Bruno Genaro',
-    role: 'Desenvolvedor Front-End na Cisco em Orlando/FL (USA) e organizador do OrlandoJS Meetup.',
+    role: 'Desenvolvedor Front-End na Cisco em Orlando/FL (USA) e organizador do OrlandoJS Meetup',
     label: '@bfgenaro',
     link: 'http://twitter.com/bfgenaro',
     photo: 'assets/images/bruno-genaro-frontinsampa.jpg'
@@ -44,101 +44,122 @@ var speakersData = [
     photo: 'assets/images/hugo-bessa-frontinsampa.jpg'
   },
   {
-    name: 'A definir',
-    role: '',
-    label: '',
-    link: '/',
-    photo: 'assets/images/speaker.jpg'
+    name: 'Reinaldo Ferraz',
+    role: 'Web accessibility, usability, Web Standards, HTML, CSS, Star Wars and coffee',
+    label: '@reinaldoferraz',
+    link: 'http://twitter.com/reinaldoferraz',
+    photo: 'assets/images/reinaldo-ferraz-frontinsampa.jpg'
   },
   {
-    name: 'A definir',
-    role: '',
-    label: '',
-    link: '/',
-    photo: 'assets/images/speaker.jpg'
+    name: 'Zeh Fernandes',
+    role: 'Designing with algorithms. In a quest to create one thing that is great.',
+    label: '@zehf',
+    link: 'http://twitter.com/zehf',
+    photo: 'assets/images/zeh-fernandes-frontinsampa.jpg'
+  },
+  {
+    name: 'Jean Carlo Emer',
+    role: 'Web craftsman and magician of computer machines. Developer at Work.co',
+    label: '@jcemer',
+    link: 'http://twitter.com/jcemer',
+    photo: 'assets/images/jean-carlo-emer-frontinsampa.jpg'
   }
 ]
 
 var timeline = [
   {
-    hour: '08:00 - 09:30',
+    hour: '08:00 - 09:20',
     title: 'Credenciamento',
     description: 'Não esqueça seu RG',
     speaker: '',
     link: ''
   },
   {
-    hour: '9:30 - 10:00',
+    hour: '9:20 - 9:30',
     title: 'Apresentação',
     description: '',
     speaker: 'Matheus Marsiglio',
     link: ''
   },
   {
-    hour: '10:10 - 11:00',
-    title: 'Aguardando Palestra',
+    hour: '9:30 - 10:10',
+    title: 'CSS Tips',
     description: '',
     speaker: 'Raphael Fabeni',
     link: ''
   },
   {
-    hour: '11:10 - 12:00',
-    title: 'Vue.js, Vuex, Single Source of Truth e aplicações reais',
-    description: 'O segredo para Single Page Applications bem sucedidas: o controle total sobre a informação carregada em memória. Esta palestra falará sobre gerenciamento centralizado do estado da aplicação.',
-    speaker: 'Fábio Vedoveli',
-    link: ''
-  },
-  {
-    hour: '12:00 - 13:30',
-    title: 'Almoço',
-    description: '',
-    speaker: '',
-    link: ''
-  },
-  {
-    hour: '13:40 - 14:00',
-    title: 'Síndrome do impostor, um mal que nunca sai de moda',
-    description: 'Você já teve a sensação que não é bom o suficiente para fazer o seu trabalho? Você já fingiu entender algo, mesmo sem entender nada? Você já teve medo de alguém descobrir que você é uma fraude? Que o código ou trabalho dos seus amigos é mais rápido ou melhor? Que você programa orientado ao Google? Então, talvez seja a hora de você entender melhor do que isso se trata e como vencer esse sentimento.',
-    speaker: 'Patricia Silva',
-    link: ''
-  },
-  {
-    hour: '14:10 - 15:00',
-    title: 'Renderizando componentes React no servidor',
-    description: 'O ReactJS tem a poderosa habilidade de renderizar seus componentes no servidor. Nesta apresentação Bruno irá mostrar os benefícios e também como e quando podemos explorar esta prática.',
-    speaker: 'Bruno Genaro',
-    link: ''
-  },
-  {
-    hour: '15:10 - 16:00',
-    title: ' UX: quem são, o que fazem, onde vivem?',
-    description: '"Fazer UX" está virando pré-requisito para desenvolver qualquer produto digital, mas o que está por trás disso? O que o mercado espera que a gente faça, como os chefes vendem o que a gente faz, o que os devs acham que a gente faz e o que a gente realmente faz (ou deveria fazer).',
-    speaker: 'Bianca Brancaleone',
-    link: ''
-  },
-  {
-    hour: '16:10 - 16:40',
-    title: 'Coffee Break',
-    description: '',
-    speaker: '',
-    link: ''
-  },
-  {
-    hour: '16:40 - 17:10',
+    hour: '10:20 - 11:00',
     title: 'Webapps confiáveis com Elm',
     description: 'Interfaces de usuário podem ser simples e confiáveis utilizando a ferramenta correta. Elm ajuda a impedir erros de execução e torna o processo de desenvolvimento mais simples. A simplicidade do Elm o ajuda a criar webapps à prova de balas e torna seu processo de desenvolvimento muito mais divertido.',
     speaker: 'Hugo Bessa',
     link: ''
   },
   {
-    hour: '17:10 - 18:30',
-    title: 'Aguardando Definição',
+    hour: '11:10 - 12:00',
+    title: ' UX: quem são, o que fazem, onde vivem?',
+    description: '"Fazer UX" está virando pré-requisito para desenvolver qualquer produto digital, mas o que está por trás disso? O que o mercado espera que a gente faça, como os chefes vendem o que a gente faz, o que os devs acham que a gente faz e o que a gente realmente faz (ou deveria fazer).',
+    speaker: 'Bianca Brancaleone',
+    link: ''
+  },
+  {
+    hour: '12:05 - 12:30',
+    title: 'WCAG 2.1',
+    description: 'Nesta palestra serão apresentadas as primeiras atualizações da nova versão das Diretrizes de Acessibilidade para Conteúdo Web, as WCAG, e como elas podem impactar a acessibilidade nas páginas Web. Serão mostradas as principais mudanças propostas nesse primeiro Draft e como isso pode refletir no desenvolvimento front-end.',
+    speaker: 'Reinaldo Ferraz',
+    link: ''
+  },
+  {
+    hour: '12:30 - 14:00',
+    title: 'Almoço',
     description: '',
     speaker: '',
     link: ''
   },
   {
-    hour: '18:40',
+    hour: '14:10 - 14:50',
+    title: 'Síndrome do impostor, um mal que nunca sai de moda',
+    description: 'Você já teve a sensação que não é bom o suficiente para fazer o seu trabalho? Você já fingiu entender algo, mesmo sem entender nada? Você já teve medo de alguém descobrir que você é uma fraude? Que o código ou trabalho dos seus amigos é mais rápido ou melhor? Que você programa orientado ao Google? Então, talvez seja a hora de você entender melhor do que isso se trata e como vencer esse sentimento.',
+    speaker: 'Patricia Silva',
+    link: ''
+  },
+  {
+    hour: '15:00 - 15:40',
+    title: 'Renderizando componentes React no servidor',
+    description: 'O ReactJS tem a poderosa habilidade de renderizar seus componentes no servidor. Nesta apresentação Bruno irá mostrar os benefícios e também como e quando podemos explorar esta prática.',
+    speaker: 'Bruno Genaro',
+    link: ''
+  },
+  {
+    hour: '15:50 - 16:10',
+    title: 'Built for destruction: Preparando sua arquitetura de componentes para o refactor',
+    description: 'Lições aprendidas ao criar um sistema de design auto documentável e de fácil refactor utilizando Functional CSS + React.',
+    speaker: 'Zéh Fernandes',
+    link: ''
+  },
+  {
+    hour: '16:20 - 16:50',
+    title: 'What I learned interviewing for Front-end Developer roles ',
+    description: 'Linguagem JavaScript. Desafios de código. Complexidade de algoritmos. CSS. Web APIs. React. E mais. Os aprendizados obtidos nos processos de entrevista para grandes nomes da tecnologia. Tudo isto contado de forma divertida (deixando de lado algumas frustrações). ',
+    speaker: 'Jean Carlo Emmer',
+    link: ''
+  },
+  {
+    hour: '17:00 - 17:30',
+    title: 'Coffee Break',
+    description: '',
+    speaker: '',
+    link: ''
+  },
+  {
+    hour: '17:30 - 18:20',
+    title: 'Vue.js, Vuex, Single Source of Truth e aplicações reais',
+    description: 'O segredo para Single Page Applications bem sucedidas: o controle total sobre a informação carregada em memória. Esta palestra falará sobre gerenciamento centralizado do estado da aplicação.',
+    speaker: 'Fábio Vedoveli',
+    link: ''
+  },
+  {
+    hour: '18:30',
     title: 'Encerramento',
     description: '',
     speaker: '',
@@ -146,8 +167,8 @@ var timeline = [
   },
   {
     hour: '19:00',
-    title: '?????',
-    description: 'Aguarde!',
+    title: 'Party - Code In The Dark',
+    description: '',
     speaker: '',
     link: ''
   }
