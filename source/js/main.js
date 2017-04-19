@@ -45,14 +45,14 @@ var speakersData = [
   },
   {
     name: 'Reinaldo Ferraz',
-    role: 'Web accessibility, usability, Web Standards, HTML, CSS, Star Wars and coffee',
+    role: 'Especialista em Desenvolvimento Web do W3C Brasil e Ceweb.br',
     label: '@reinaldoferraz',
     link: 'http://twitter.com/reinaldoferraz',
     photo: 'assets/images/reinaldo-ferraz-frontinsampa.jpg'
   },
   {
     name: 'Zeh Fernandes',
-    role: 'Designing with algorithms. In a quest to create one thing that is great.',
+    role: 'Designing with algorithms. In a quest to create one thing that is great',
     label: '@zehf',
     link: 'http://twitter.com/zehf',
     photo: 'assets/images/zeh-fernandes-frontinsampa.jpg'
