@@ -359,6 +359,12 @@ class Timeline {
 }
 
 window.onload = function () {
+  [...document.querySelectorAll('[data-id=ticket-button]')].forEach(element => {
+    element.addEventListener('click', () => {
+      fbq('track', 'Lead');
+    });
+  })
+
   new FontSize();
 
   clickMenu();
