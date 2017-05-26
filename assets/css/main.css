@@ -497,6 +497,9 @@ a {
   .info .slogan {
     position: relative;
     z-index: 2; }
+  .info .info-previous li {
+    display: inline-block;
+    padding-right: 0.75rem; }
 
 .speaker-list {
   color: #fff;
@@ -734,32 +737,20 @@ a {
   margin-bottom: 4rem;
   display: inline-block; }
 
-.staff-list {
+.sponsors-group-support ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin: 2rem 0; }
-  .staff-list li {
-    margin: 0 1rem 1rem;
-    width: 100px; }
-    @media screen and (min-width: 640px) {
-      .staff-list li {
-        margin: 0 1rem;
-        width: 150px; } }
-  .staff-list img {
-    display: block;
-    margin-bottom: 10px;
-    max-width: 100%; }
-  .staff-list .text-info {
-    display: block;
-    margin-bottom: 5px; }
-  .staff-list a {
-    color: #000; }
+          justify-content: center; }
+  .sponsors-group-support ul li {
+    padding: 1rem; }
 
 .contact {
   color: #fff;
@@ -797,6 +788,54 @@ a {
       color: #636363; }
       .contact .contact-links a:hover, .contact .contact-links a:focus {
         color: #fff; }
+
+.staff {
+  background: #fff;
+  text-align: center;
+  position: relative; }
+  @media screen and (min-width: 640px) {
+    .staff:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .05;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+      background: url(../images/bg-frontinsampa.jpg) no-repeat fixed;
+      background-size: cover; } }
+  .staff .container {
+    position: relative;
+    z-index: 2; }
+
+.staff-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0; }
+  .staff-list li {
+    margin: 0 1rem 1rem;
+    width: 100px; }
+    @media screen and (min-width: 640px) {
+      .staff-list li {
+        margin: 0 1rem;
+        width: 150px; } }
+  .staff-list img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%; }
+  .staff-list .text-info {
+    display: block;
+    margin-bottom: 5px; }
+  .staff-list a {
+    color: #000; }
 
 [aria-hidden="true"] {
   visibility: hidden;
