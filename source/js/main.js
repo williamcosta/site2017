@@ -63,6 +63,13 @@ var speakersData = [
     label: '@jcemer',
     link: 'http://twitter.com/jcemer',
     photo: 'assets/images/jean-carlo-emer-frontinsampa.jpg'
+  },
+  {
+    name: 'Zeno Rocha',
+    role: 'Principal Developer Advocate da Liferay',
+    label: '@zenorocha',
+    link: 'https://twitter.com/zenorocha',
+    photo: 'assets/images/zeno-rocha-frontinsampa.jpg'
   }
 ]
 
@@ -159,10 +166,10 @@ var timeline = [
     link: ''
   },
   {
-    hour: '18:30',
-    title: 'Encerramento',
+    hour: '18:30 - 19:00',
+    title: 'Aguardando',
     description: '',
-    speaker: '',
+    speaker: 'Zeno Rocha',
     link: ''
   },
   {
@@ -196,7 +203,7 @@ const speakerTemplate = (speaker) => {
     return (
       `
         <figure class="speaker-item">
-          <img src="${ item.photo }" alt="Palestrante ${ item.name }">
+          <img src="${ item.photo }" alt="Palestrante ${ item.name }" width="240" height="210">
           <figcaption>
             <p class="text-large">${ item.name }</p>
             <p>
