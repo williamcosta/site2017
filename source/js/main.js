@@ -148,7 +148,7 @@ var timeline = [
     hour: '16:20 - 16:50',
     title: 'What I learned interviewing for Front-end Developer roles ',
     description: 'Linguagem JavaScript. Desafios de código. Complexidade de algoritmos. CSS. Web APIs. React. E mais. Os aprendizados obtidos nos processos de entrevista para grandes nomes da tecnologia. Tudo isto contado de forma divertida (deixando de lado algumas frustrações). ',
-    speaker: 'Jean Carlo Emmer',
+    speaker: 'Jean Carlo Emer',
     link: ''
   },
   {
