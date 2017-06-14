@@ -18,3 +18,12 @@
 
     li
       padding: $gutter
+
+.list-item
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  @media screen and (min-width: $medium)
+    flex-direction: inherit
